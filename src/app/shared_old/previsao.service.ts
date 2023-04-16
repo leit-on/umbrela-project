@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { Observable, of } from 'rxjs';
 
-import { Previsao } from '../models/Previsao';
+import { Previsao } from '../models/previsao';
 import { PREVISOES } from './mock-previsoes';
 import { MessageService } from './message.service';
 

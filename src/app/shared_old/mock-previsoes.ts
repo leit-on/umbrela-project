@@ -1,4 +1,4 @@
-import { Previsao } from '../models/Previsao';
+import { Previsao } from '../models/previsao';
 
 export const PREVISOES: Previsao[] = [
   { id: 12, manha: 'sol-entre-nuvens', tarde: 'chuvoso', noite: 'nublado', name: 'Dr. Nice' },

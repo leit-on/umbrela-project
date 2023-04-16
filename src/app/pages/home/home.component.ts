@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Previsao } from '../../models/Previsao';
-import { PrevisaoService } from '../../shared/previsao.service';
+import { Previsao } from '../../models/previsao';
+import { PrevisaoService } from '../../shared_old/previsao.service';
 
 @Component({
   selector: 'app-home',
