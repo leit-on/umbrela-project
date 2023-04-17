@@ -1,6 +1,6 @@
 <mat-card *ngIf="forecastCities">
   <mat-card-content>
-    <mat-card-title>Talvez você se interesse pelo clima destas cidades:</mat-card-title>
+    <mat-card-title>Busque sol nas próximidades:</mat-card-title>
     <mat-card-actions align="end">
 
 
@@ -77,11 +77,11 @@
     </mat-card-actions>
 
     <mat-grid-list [gridCols]="{xs: 1, sm: 2, md: 2, lg: 2, xl: 2}" class="header-14-sub" rowHeight="fit"
-      fxLayout="row wrap">
+      fxLayout="row wrap" rowHeight="13rem">
 
       <div *ngFor="let item of forecastCities">
-        <mat-grid-tile style="height: calc(100vh - 24px)" fxLayout="row wrap">
-          <mat-card class="oh text-left little-profile" style="align-content: left;" fxFlex.gt-md="100">
+        <mat-grid-tile style="height: calc(0vh - 24px)" fxLayout="row wrap">
+          <mat-card class="oh text-left little-profile" style="align-content: left;" fxFlex.gt-md="100"  style="margin-top: -35px; max-width: 250px;">
             <mat-card-content>
               <div>
                 <h6 class="m-t-0  text-center" style="color: rgb(145, 145, 145);  font-size: 20px; font-weight: bold;">
@@ -90,15 +90,15 @@
               </div>
               <div fxLayout="row wrap" fxLayoutWrap="wrap" style="margin-top: -25px;">
 
-                <div fxFlex.gt-sm="63.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                <div fxFlex.gt-sm="63.33%" fxFlex.gt-xs="33.33%" fxFlex="70">
                   <h4 class="m-0 font-light">{{item.climate}}</h4>
                 </div>
-                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="30">
                   <h5 class="m-0 font-light">{{item.rain}}%</h5>
                   <small>Chuva</small>
                 </div>
               </div>
-              <mat-card-actions class="text-center">
+              <mat-card-actions class="text-center"  style="max-height: 30px; text-align: center;">
                 <button mat-raised-button color="warn" style="text-align: center;" (click)="navigateDetailCity(item)">Detalhes</button>
               </mat-card-actions>
             </mat-card-content>

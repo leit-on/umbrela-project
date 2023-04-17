@@ -13,8 +13,18 @@
 
     <mat-card>
       <mat-card-content>
-        <mat-card-title>Confira a previsão dos próximos dias para São Paulo</mat-card-title>
-        
+        <mat-card-title style="max-height: 30px; text-align: left;">
+
+          <mat-form-field class="example-form-field" style="max-width: 220px; text-align: center;">
+            <input matInput type="text" [(ngModel)]="value" placeholder="Ex. Rio de janeiro"  (keyup.enter)="onEnter(value)">
+            <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-icon>search</mat-icon>
+
+        </mat-card-title>
+
       </mat-card-content>
       <!-- <div fxLayout="row">
         <mat-spinner></mat-spinner>  
@@ -23,14 +33,13 @@
       <mat-tab-group>
  
         <div *ngFor="let tab of tabForecast">
-
           <mat-tab class="center" [label]=tab.title flex>
             <div fxLayout="row wrap">
               <div fxFlex.gt-sm="40" fxFlex.gt-lg="40" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100"
                 style="margin-top: 40px;">
                 <app-forecast-wheater [forecastDay]="tab.forecastDay"></app-forecast-wheater>
               </div>
-              <div fxFlex.gt-sm="40" fxFlex.gt-lg="60" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100">
+              <div fxFlex.gt-sm="40" fxFlex.gt-lg="60" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100" style="margin-top: -10px;">
                 <app-forecast-wheater-cities [forecastCities]="tab.forecastCities" (changeFilter)="changeFilter($event)" (changePage)="changePage($event)" (getDetailCity)="getDetailCity($event)"></app-forecast-wheater-cities>
               </div>
             </div>

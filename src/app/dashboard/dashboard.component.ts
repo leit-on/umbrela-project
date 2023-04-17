@@ -16,6 +16,7 @@ import { ProgressSpinnerDialogComponent } from './dashboard-components/spinner-d
 export class DashboardComponent implements AfterViewInit {
 	tabForecast: ({ title: string; forecastDay: { date: string; climate: string; tempMin: string; tempMax: string, rain: string; umity: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; } }; forecastCities: { id: string; distance: string; city: string; climate: string; rain: string; icon: string; umity: string; }[]; } | { title: string; forecastDay?: undefined; forecastCities?: undefined; })[]
 	//tabForecast: [{ title: string; forecastDay:{ date:string; clima: string; }; forecastCities:[{id:string; distance:string; city:string; clima:string; rain: string; umity: string}];}]
+	value = "São Paulo";
 
 	constructor(
 		private dialog: MatDialog
@@ -111,9 +112,7 @@ export class DashboardComponent implements AfterViewInit {
 					{
 						id: "3",
 						distance: "15",
-
 						city: "Atibaia",
-
 						climate: "nublado",
 						rain: "15",
 						icon: "wb_cloudy",
@@ -261,7 +260,10 @@ export class DashboardComponent implements AfterViewInit {
 			}
 		]
 	}
-
+	onEnter(city:string){
+		console.log('busca de cidade:', city)
+		this.showProgressSpinnerUntilExecuted( new Observable(this.myObservable));
+	}
 	changeFilter(event: any){
 		console.log('evento de mudança filtro:', event)
 	}

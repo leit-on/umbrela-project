@@ -414,7 +414,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function AppSidebarComponent_mat_list_item_6_a_1_span_6_Template(rf, ctx) {
+function AppSidebarComponent_mat_list_item_5_a_1_span_6_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1);
@@ -430,7 +430,7 @@ function AppSidebarComponent_mat_list_item_6_a_1_span_6_Template(rf, ctx) {
 const _c0 = function (a1) {
   return ["/", a1];
 };
-function AppSidebarComponent_mat_list_item_6_a_1_Template(rf, ctx) {
+function AppSidebarComponent_mat_list_item_5_a_1_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "a", 7)(1, "mat-icon");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2);
@@ -439,7 +439,7 @@ function AppSidebarComponent_mat_list_item_6_a_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](5, "span", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, AppSidebarComponent_mat_list_item_6_a_1_span_6_Template, 2, 4, "span", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, AppSidebarComponent_mat_list_item_5_a_1_span_6_Template, 2, 4, "span", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
@@ -453,10 +453,10 @@ function AppSidebarComponent_mat_list_item_6_a_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", menuitem_r1.badge);
   }
 }
-function AppSidebarComponent_mat_list_item_6_Template(rf, ctx) {
+function AppSidebarComponent_mat_list_item_5_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "mat-list-item", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, AppSidebarComponent_mat_list_item_6_a_1_Template, 7, 6, "a", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, AppSidebarComponent_mat_list_item_5_a_1_Template, 7, 6, "a", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
@@ -483,7 +483,7 @@ AppSidebarComponent.ɵfac = function AppSidebarComponent_Factory(t) {
 AppSidebarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
   type: AppSidebarComponent,
   selectors: [["app-sidebar"]],
-  decls: 7,
+  decls: 6,
   vars: 1,
   consts: [[1, "user-profile", 2, "background", "url(assets/images/background/umbrela1.jpg) no-repeat", "height", "200px"], [1, "profile-text"], [1, "ti-angle-down", "font-12", "m-l-5"], ["appAccordion", ""], ["appAccordionLink", "", "routerLinkActive", "selected", 3, "group", 4, "ngFor", "ngForOf"], ["appAccordionLink", "", "routerLinkActive", "selected", 3, "group"], ["class", "", "appAccordionToggle", "", 3, "routerLink", 4, "ngIf"], ["appAccordionToggle", "", 1, "", 3, "routerLink"], ["fxFlex", ""], [3, "class", 4, "ngFor", "ngForOf"]],
   template: function AppSidebarComponent_Template(rf, ctx) {
@@ -491,15 +491,14 @@ AppSidebarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "div");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "div", 1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](3, " Ola ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](4, "i", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "i", 2);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "mat-nav-list", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, AppSidebarComponent_mat_list_item_6_Template, 2, 2, "mat-list-item", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "mat-nav-list", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](5, AppSidebarComponent_mat_list_item_5_Template, 2, 2, "mat-list-item", 4);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](5);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.menuItems.getMenuitem());
     }
   },

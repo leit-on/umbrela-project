@@ -4,14 +4,16 @@
         <div class="pro-img">
             <img src="assets/images/landscapes/sun.png" style="max-width: 70px; max-height: 70px;" alt="user">
         </div>
-        <h3 class="m-b-0" style="color: rgb(145, 145, 145);  font-size: 20px; font-weight: bold;">{{forecastDay.date}}
+        <!-- <h3 class="m-b-0" style="color: rgb(145, 145, 145);  font-size: 20px; font-weight: bold;">São Paulo
+        </h3> -->
+        <h3 class="m-b-0" style="color: rgb(145, 145, 145);  font-size: 20px; font-weight: bold;">{{forecastDay.date}} - São Paulo
         </h3>
 
-        <h6 class="m-t-0 " style="color: rgb(145, 145, 145); font-size: 20px; font-weight: bold;">
+        <h6 class="m-t-10" style="color: rgb(145, 145, 145); font-size: 20px; font-weight: bold;">
             {{forecastDay.climate}}</h6>
 
-        <h6 class="m-t-0 " style="color: rgb(145, 145, 145); font-size: 20px; font-weight: bold;"><mat-icon
-                style=" transform: scale(0.8);">water_drop</mat-icon>{{forecastDay.rain}}% Chuva</h6>
+        <!-- <h6 class="m-t-0 " style="color: rgb(145, 145, 145); font-size: 20px; font-weight: bold;"><mat-icon
+                style=" transform: scale(0.8);">water_drop</mat-icon>{{forecastDay.rain}}% Chuva</h6> -->
         <!-- <div fxLayout="row" fxLayoutWrap="wrap" class="m-t-30">
             <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                 <h3 class="m-0 font-light">{{forecastDay.tempMin}}° a {{forecastDay.tempMax}}°</h3>
@@ -27,7 +29,7 @@
             </div>
         </div> -->
 
-        <div fxLayout="row" fxLayoutWrap="wrap" class="m-t-30">
+        <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
             <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                 <h3 class="m-0 font-light">Manhã {{forecastDay.morning.temperature}}°</h3>
                 <small>{{forecastDay.morning.climate}}</small>
@@ -41,13 +43,8 @@
                 <small>{{forecastDay.night.climate}}</small>
             </div>
         </div>
-
-        <mat-card-actions>
-            <button mat-raised-button color="warn">Ver em detalhes</button>
-        </mat-card-actions>
-
-
-
-
+        <!-- <div style="margin-top: 20px; align-self: center;" align="center">
+                <button mat-raised-button color="warn">Veja mais</button>
+        </div> -->
     </mat-card-content>
 </mat-card>
