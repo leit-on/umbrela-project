@@ -329,18 +329,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/keycodes */ 8456);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 4666);
-/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/core */ 9121);
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/button */ 4522);
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/card */ 2156);
-/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/chips */ 1169);
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/form-field */ 5074);
-/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/grid-list */ 2642);
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/icon */ 7822);
-/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/menu */ 8589);
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/paginator */ 6060);
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/select */ 7371);
-/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/flex-layout/flex */ 6722);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/core */ 9121);
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/button */ 4522);
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ 2156);
+/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/chips */ 1169);
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/form-field */ 5074);
+/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/grid-list */ 2642);
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/icon */ 7822);
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/menu */ 8589);
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/paginator */ 6060);
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/select */ 7371);
+/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/flex-layout/flex */ 6722);
 /* harmony import */ var _grid_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../grid-directive */ 8623);
+
 
 
 
@@ -360,7 +362,7 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = ["menuFilters"];
 function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_mat_icon_2_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-icon", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-icon", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "cancel");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -368,7 +370,7 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_mat_icon_2_Templat
 function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_Template(rf, ctx) {
   if (rf & 1) {
     const _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-chip", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-chip", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("removed", function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_Template_mat_chip_removed_0_listener() {
       const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r16);
       const filter_r13 = restoredCtx.$implicit;
@@ -376,7 +378,7 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_Template(rf, ctx) 
       return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r15.removeFilter(filter_r13));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_mat_icon_2_Template, 2, 0, "mat-icon", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_mat_icon_2_Template, 2, 0, "mat-icon", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
@@ -391,7 +393,7 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_Template(rf, ctx) 
 }
 function ForecastWhetherCitiesComponent_mat_card_0_mat_option_26_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -404,7 +406,7 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_option_26_Template(rf, ct
 }
 function ForecastWhetherCitiesComponent_mat_card_0_mat_option_33_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -417,7 +419,7 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_option_33_Template(rf, ct
 }
 function ForecastWhetherCitiesComponent_mat_card_0_mat_option_40_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -431,21 +433,21 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_option_40_Template(rf, ct
 function ForecastWhetherCitiesComponent_mat_card_0_div_42_Template(rf, ctx) {
   if (rf & 1) {
     const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div")(1, "mat-grid-tile", 23)(2, "mat-card", 24)(3, "mat-card-content")(4, "div")(5, "h6", 25)(6, "mat-icon");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div")(1, "mat-grid-tile", 24)(2, "mat-card", 25)(3, "mat-card-content")(4, "div")(5, "h6", 26)(6, "mat-icon");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div", 26)(10, "div", 27)(11, "h4", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div", 27)(10, "div", 28)(11, "h4", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "div", 29)(14, "h5", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "div", 30)(14, "h5", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "small");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17, "Chuva");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "mat-card-actions", 30)(19, "button", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "mat-card-actions", 31)(19, "button", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function ForecastWhetherCitiesComponent_mat_card_0_div_42_Template_button_click_19_listener() {
       const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r22);
       const item_r20 = restoredCtx.$implicit;
@@ -512,6 +514,10 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
       const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](10);
       const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r24.setFilterOrdenate(_r3, $event.value, "ordenate"));
+    })("ngModelChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_ngModelChange_25_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r25);
+      const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r26.ordenate_filter_initial = $event);
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](26, ForecastWhetherCitiesComponent_mat_card_0_mat_option_26_Template, 2, 2, "mat-option", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
@@ -525,34 +531,38 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
     })("selectionChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_selectionChange_32_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r25);
       const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](10);
-      const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r27.setFilterClimates(_r3, $event.value, "climate"));
+      const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r28.setFilterClimates(_r3, $event.value, "climate"));
+    })("ngModelChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_ngModelChange_32_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r25);
+      const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r29.climate_filter_initial = $event);
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](33, ForecastWhetherCitiesComponent_mat_card_0_mat_option_33_Template, 2, 2, "mat-option", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "mat-menu", null, 14)(36, "mat-form-field", 11)(37, "mat-label");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "selecione...");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "mat-select", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "mat-select", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_click_39_listener($event) {
       $event.stopPropagation();
       return $event.preventDefault;
     })("selectionChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_selectionChange_39_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r25);
       const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](10);
-      const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r29.setFilterClimates(_r3, $event.value, "climate"));
+      const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r31.setFilterClimates(_r3, $event.value, "climate"));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](40, ForecastWhetherCitiesComponent_mat_card_0_mat_option_40_Template, 2, 2, "mat-option", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "mat-grid-list", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](42, ForecastWhetherCitiesComponent_mat_card_0_div_42_Template, 21, 5, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "mat-grid-list", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](42, ForecastWhetherCitiesComponent_mat_card_0_div_42_Template, 21, 5, "div", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](43, "mat-paginator", 17, 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](43, "mat-paginator", 18, 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("page", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_paginator_page_43_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r25);
-      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r30.handlePageEvent($event));
+      const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r32.handlePageEvent($event));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
   }
@@ -571,18 +581,22 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("matMenuTriggerFor", _r5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("matMenuTriggerFor", _r7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx_r0.ordenate_filter_initial);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r0.ordenate_filters);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx_r0.climate_filter_initial);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r0.climates);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r0.climates);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("gridCols", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](17, _c1));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("gridCols", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](19, _c1));
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r0.forecastCities);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("length", ctx_r0.length)("pageSize", ctx_r0.pageSize)("disabled", ctx_r0.disabled)("showFirstLastButtons", ctx_r0.showFirstLastButtons)("pageSizeOptions", ctx_r0.showPageSizeOptions ? ctx_r0.pageSizeOptions : _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](18, _c2))("hidePageSize", ctx_r0.hidePageSize)("pageIndex", ctx_r0.pageIndex);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("length", ctx_r0.length)("pageSize", ctx_r0.pageSize)("disabled", ctx_r0.disabled)("showFirstLastButtons", ctx_r0.showFirstLastButtons)("pageSizeOptions", ctx_r0.showPageSizeOptions ? ctx_r0.pageSizeOptions : _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](20, _c2))("hidePageSize", ctx_r0.hidePageSize)("pageIndex", ctx_r0.pageIndex);
   }
 }
 class ForecastWhetherCitiesComponent {
@@ -594,6 +608,8 @@ class ForecastWhetherCitiesComponent {
     this.climates = ['ensolarado', 'sol-entre-nuvens', 'nublado', 'chuvoso'];
     this.filters = [];
     this.filters_size = 0;
+    this.ordenate_filter_initial = '';
+    this.climate_filter_initial = '';
     this.separatorKeysCodes = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__.ENTER, _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__.COMMA];
     this.addOnBlur = true;
     this.selectable = true;
@@ -621,11 +637,15 @@ class ForecastWhetherCitiesComponent {
     menuTrigger.closeMenu();
   }
   removeFilter(fruit) {
+    console.log('tipo do filtro', fruit);
+    if (fruit.type == 'ordenate') this.ordenate_filter_initial = '';
+    if (fruit.type == 'climate') this.climate_filter_initial = '';
     const index = this.filters.indexOf(fruit);
     if (index >= 0) {
       this.filters.splice(index, 1);
     }
     this.filters_size = this.filters_size - 1;
+    alert('valor do filtro:' + this.filters_size);
   }
   handlePageEvent(e) {
     this.pageEvent = e;
@@ -648,6 +668,7 @@ class ForecastWhetherCitiesComponent {
             type: filter_type.trim()
           });
           this.filters_size = this.filters_size + 1;
+          alert('valor do filtro:' + this.filters_size);
           this.changeFilter.emit(this.filters);
         }
         // Reset the input value
@@ -700,16 +721,16 @@ ForecastWhetherCitiesComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPOR
   },
   decls: 1,
   vars: 1,
-  consts: [[4, "ngIf"], ["align", "end"], [1, "demo-chip-list"], ["chipList", ""], ["style", "font-size: small;", 3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], ["mat-button", "", "color", "primary", 3, "matMenuTriggerFor"], ["menuFilters", "matMenuTrigger"], ["menu", "matMenu"], ["mat-menu-item", "", 3, "matMenuTriggerFor"], ["mat-menu-item", ""], ["ordenate", "matMenu"], ["appearance", "fill"], ["placeholder", "Name", 3, "click", "selectionChange"], [3, "value", 4, "ngFor", "ngForOf"], ["climate", "matMenu"], ["rowHeight", "fit", "fxLayout", "row wrap", "rowHeight", "13rem", 1, "header-14-sub", 3, "gridCols"], [4, "ngFor", "ngForOf"], ["aria-label", "Select page", 1, "demo-paginator", 3, "length", "pageSize", "disabled", "showFirstLastButtons", "pageSizeOptions", "hidePageSize", "pageIndex", "page"], ["paginator", ""], [2, "font-size", "small", 3, "selectable", "removable", "removed"], ["matChipRemove", "", "style", " transform: scale(0.8);", 4, "ngIf"], ["matChipRemove", "", 2, "transform", "scale(0.8)"], [3, "value"], ["fxLayout", "row wrap", 2, "height", "calc(0vh - 24px)"], ["fxFlex.gt-md", "100", 1, "oh", "text-left", "little-profile", 2, "margin-top", "-35px", "max-width", "250px"], [1, "m-t-0", "text-center", 2, "color", "rgb(145, 145, 145)", "font-size", "20px", "font-weight", "bold"], ["fxLayout", "row wrap", "fxLayoutWrap", "wrap", 2, "margin-top", "-25px"], ["fxFlex.gt-sm", "63.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "70"], [1, "m-0", "font-light"], ["fxFlex.gt-sm", "33.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "30"], [1, "text-center", 2, "max-height", "30px", "text-align", "center"], ["mat-raised-button", "", "color", "warn", 2, "text-align", "center", 3, "click"]],
+  consts: [[4, "ngIf"], ["align", "end"], [1, "demo-chip-list"], ["chipList", ""], ["style", "font-size: small;", 3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], ["mat-button", "", "color", "primary", 3, "matMenuTriggerFor"], ["menuFilters", "matMenuTrigger"], ["menu", "matMenu"], ["mat-menu-item", "", 3, "matMenuTriggerFor"], ["mat-menu-item", ""], ["ordenate", "matMenu"], ["appearance", "fill"], ["placeholder", "Name", 3, "ngModel", "click", "selectionChange", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], ["climate", "matMenu"], ["placeholder", "Name", 3, "click", "selectionChange"], ["rowHeight", "fit", "fxLayout", "row wrap", "rowHeight", "13rem", 1, "header-14-sub", 3, "gridCols"], [4, "ngFor", "ngForOf"], ["aria-label", "Select page", 1, "demo-paginator", 3, "length", "pageSize", "disabled", "showFirstLastButtons", "pageSizeOptions", "hidePageSize", "pageIndex", "page"], ["paginator", ""], [2, "font-size", "small", 3, "selectable", "removable", "removed"], ["matChipRemove", "", "style", " transform: scale(0.8);", 4, "ngIf"], ["matChipRemove", "", 2, "transform", "scale(0.8)"], [3, "value"], ["fxLayout", "row wrap", 2, "height", "calc(0vh - 24px)"], ["fxFlex.gt-md", "100", 1, "oh", "text-left", "little-profile", 2, "margin-top", "-35px", "max-width", "250px"], [1, "m-t-0", "text-center", 2, "color", "rgb(145, 145, 145)", "font-size", "20px", "font-weight", "bold"], ["fxLayout", "row wrap", "fxLayoutWrap", "wrap", 2, "margin-top", "-25px"], ["fxFlex.gt-sm", "63.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "70"], [1, "m-0", "font-light"], ["fxFlex.gt-sm", "33.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "30"], [1, "text-center", 2, "max-height", "30px", "text-align", "center"], ["mat-raised-button", "", "color", "warn", 2, "text-align", "center", 3, "click"]],
   template: function ForecastWhetherCitiesComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, ForecastWhetherCitiesComponent_mat_card_0_Template, 45, 19, "mat-card", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, ForecastWhetherCitiesComponent_mat_card_0_Template, 45, 21, "mat-card", 0);
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.forecastCities);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, _angular_material_core__WEBPACK_IMPORTED_MODULE_4__.MatOption, _angular_material_button__WEBPACK_IMPORTED_MODULE_5__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_6__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_6__.MatCardContent, _angular_material_card__WEBPACK_IMPORTED_MODULE_6__.MatCardTitle, _angular_material_card__WEBPACK_IMPORTED_MODULE_6__.MatCardActions, _angular_material_chips__WEBPACK_IMPORTED_MODULE_7__.MatChipList, _angular_material_chips__WEBPACK_IMPORTED_MODULE_7__.MatChip, _angular_material_chips__WEBPACK_IMPORTED_MODULE_7__.MatChipRemove, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__.MatLabel, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_9__.MatGridList, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_9__.MatGridTile, _angular_material_icon__WEBPACK_IMPORTED_MODULE_10__.MatIcon, _angular_material_menu__WEBPACK_IMPORTED_MODULE_11__.MatMenu, _angular_material_menu__WEBPACK_IMPORTED_MODULE_11__.MatMenuItem, _angular_material_menu__WEBPACK_IMPORTED_MODULE_11__.MatMenuTrigger, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_12__.MatPaginator, _angular_material_select__WEBPACK_IMPORTED_MODULE_13__.MatSelect, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_14__.DefaultLayoutDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_14__.DefaultFlexDirective, _grid_directive__WEBPACK_IMPORTED_MODULE_0__.GridColsDirective],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_material_core__WEBPACK_IMPORTED_MODULE_5__.MatOption, _angular_material_button__WEBPACK_IMPORTED_MODULE_6__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_7__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_7__.MatCardContent, _angular_material_card__WEBPACK_IMPORTED_MODULE_7__.MatCardTitle, _angular_material_card__WEBPACK_IMPORTED_MODULE_7__.MatCardActions, _angular_material_chips__WEBPACK_IMPORTED_MODULE_8__.MatChipList, _angular_material_chips__WEBPACK_IMPORTED_MODULE_8__.MatChip, _angular_material_chips__WEBPACK_IMPORTED_MODULE_8__.MatChipRemove, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__.MatLabel, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_10__.MatGridList, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_10__.MatGridTile, _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__.MatIcon, _angular_material_menu__WEBPACK_IMPORTED_MODULE_12__.MatMenu, _angular_material_menu__WEBPACK_IMPORTED_MODULE_12__.MatMenuItem, _angular_material_menu__WEBPACK_IMPORTED_MODULE_12__.MatMenuTrigger, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_13__.MatPaginator, _angular_material_select__WEBPACK_IMPORTED_MODULE_14__.MatSelect, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_15__.DefaultLayoutDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_15__.DefaultFlexDirective, _grid_directive__WEBPACK_IMPORTED_MODULE_0__.GridColsDirective],
   encapsulation: 2
 });
 

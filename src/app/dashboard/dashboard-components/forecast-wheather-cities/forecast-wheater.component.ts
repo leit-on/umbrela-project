@@ -21,8 +21,8 @@ export class ForecastWhetherCitiesComponent implements OnInit {
 
   filters: ({ name: string; type: string })[] = [];
   filters_size = 0;
-
-
+  ordenate_filter_initial = '';
+  climate_filter_initial = '';
 
   separatorKeysCodes = [ENTER, COMMA];
   addOnBlur = true;
@@ -62,12 +62,21 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   }
 
   removeFilter(fruit: any): void {
+    console.log('tipo do filtro', fruit);
+
+    if(fruit.type == 'ordenate')
+      this.ordenate_filter_initial = '';
+
+    if(fruit.type == 'climate')
+      this.climate_filter_initial = '';
+
     const index = this.filters.indexOf(fruit);
 
     if (index >= 0) {
       this.filters.splice(index, 1);
     }
     this.filters_size = this.filters_size - 1;
+    alert('valor do filtro:'+this.filters_size);
   }
 
   handlePageEvent(e: PageEvent) {
@@ -93,6 +102,8 @@ export class ForecastWhetherCitiesComponent implements OnInit {
         if ((filter_name || '').trim()) {
           this.filters.push({ name: filter_name.trim(), type: filter_type.trim() });
           this.filters_size = this.filters_size + 1;
+          alert('valor do filtro:'+this.filters_size);
+
           this.changeFilter.emit(this.filters);
         }
 

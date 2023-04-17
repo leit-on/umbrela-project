@@ -42,7 +42,7 @@
         <mat-form-field appearance="fill">
           <mat-label>selecione..</mat-label>
           <mat-select placeholder="Name" (click)="$event.stopPropagation();$event.preventDefault"
-            (selectionChange)="setFilterOrdenate(menuFilters, $event.value, 'ordenate')">
+            (selectionChange)="setFilterOrdenate(menuFilters, $event.value, 'ordenate')" [(ngModel)]="ordenate_filter_initial">
             <mat-option *ngFor="let name of ordenate_filters" [value]="name">
               {{ name }}
             </mat-option>
@@ -54,7 +54,7 @@
         <mat-form-field appearance="fill">
           <mat-label>selecione...</mat-label>
           <mat-select placeholder="Name" (click)="$event.stopPropagation();$event.preventDefault"
-            (selectionChange)="setFilterClimates(menuFilters, $event.value, 'climate')">
+            (selectionChange)="setFilterClimates(menuFilters, $event.value, 'climate')"  [(ngModel)]="climate_filter_initial">
             <mat-option *ngFor="let name of climates" [value]="name">
               {{ name }}
             </mat-option>
