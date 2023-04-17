@@ -109,10 +109,10 @@
 
 
     </mat-grid-list>
-    <mat-paginator #paginator class="demo-paginator" (page)="handlePageEvent($event)" [length]="length"
+    <mat-paginator #paginator class="demo-paginator" (page)="handlePageEvent($event)" [length]="lengthPaginate"
       [pageSize]="pageSize" [disabled]="disabled" [showFirstLastButtons]="showFirstLastButtons"
       [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []" [hidePageSize]="hidePageSize"
-      [pageIndex]="pageIndex" aria-label="Select page">
+      [pageIndex]="pageIndexPaginate" aria-label="Select page">
     </mat-paginator>
   </mat-card-content>
 

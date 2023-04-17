@@ -31,8 +31,12 @@ export class ForecastWhetherCitiesComponent implements OnInit {
 
   constructor() { }
   @Input() forecastCities!: { id: string; distance: string; city: string; climate: string; rain: string; umity: string; icon: string; }[] | undefined;
+  @Input() lengthPaginate: any;
+  @Input() pageIndexPaginate: any;
 
-  length = 50;
+  
+
+  length = 8;
   pageSize = 4;
   pageIndex = 0;
   pageSizeOptions = [4];
@@ -45,8 +49,8 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   pageEvent: PageEvent;
 
   ngOnInit(): void {
-    if (this.forecastCities?.length != undefined)
-      this.length = this.forecastCities?.length
+    // if (this.forecastCities?.length != undefined)
+    //   this.length = this.forecastCities?.length
   }
 
   setFilterOrdenate(menuTrigger: MatMenuTrigger, filter: string, type: string) {
@@ -76,7 +80,6 @@ export class ForecastWhetherCitiesComponent implements OnInit {
       this.filters.splice(index, 1);
     }
     this.filters_size = this.filters_size - 1;
-    alert('valor do filtro:'+this.filters_size);
   }
 
   handlePageEvent(e: PageEvent) {
@@ -102,8 +105,6 @@ export class ForecastWhetherCitiesComponent implements OnInit {
         if ((filter_name || '').trim()) {
           this.filters.push({ name: filter_name.trim(), type: filter_type.trim() });
           this.filters_size = this.filters_size + 1;
-          alert('valor do filtro:'+this.filters_size);
-
           this.changeFilter.emit(this.filters);
         }
 

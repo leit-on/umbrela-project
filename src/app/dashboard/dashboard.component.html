@@ -17,17 +17,21 @@
         <mat-spinner></mat-spinner>  
         <mat-progress-bar mode="indeterminate" value="40"></mat-progress-bar>  
       </div> -->
-      <mat-tab-group>
+      <mat-tab-group style="width: 100%;" animationDuration="0ms">
  
         <div *ngFor="let tab of tabForecast">
           <mat-tab class="center" [label]=tab.title flex>
+            <ng-template mat-tab-label>
+              {{tab.title}}<br />
+              {{tab.title_day_week}}
+            </ng-template>
             <div fxLayout="row wrap">
               <div fxFlex.gt-sm="40" fxFlex.gt-lg="40" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100"
                 style="margin-top: 40px;">
                 <app-forecast-wheater [forecastDay]="tab.forecastDay"></app-forecast-wheater>
               </div>
               <div fxFlex.gt-sm="40" fxFlex.gt-lg="60" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100" style="margin-top: -10px;">
-                <app-forecast-wheater-cities [forecastCities]="tab.forecastCities" (changeFilter)="changeFilter($event)" (changePage)="changePage($event)" (getDetailCity)="getDetailCity($event)"></app-forecast-wheater-cities>
+                <app-forecast-wheater-cities [forecastCities]="tab.forecastCities" [lengthPaginate]="8" [pageIndexPaginate]='pageIndexPaginate' (changeFilter)="changeFilter($event)" (changePage)="changePage($event)" (getDetailCity)="getDetailCity($event)"></app-forecast-wheater-cities>
               </div>
             </div>
           </mat-tab>
