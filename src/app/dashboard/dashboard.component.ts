@@ -4,6 +4,7 @@ import { GridColsDirective } from './grid-directive'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
 import { ProgressSpinnerDialogComponent } from './dashboard-components/spinner-dialog-component/progress-spinner-dialog.component';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -18,6 +19,11 @@ export class DashboardComponent implements AfterViewInit {
 	//tabForecast: [{ title: string; forecastDay:{ date:string; clima: string; }; forecastCities:[{id:string; distance:string; city:string; clima:string; rain: string; umity: string}];}]
 	value = "São Paulo";
 	pageIndexPaginate = 0;
+
+	  range = new FormGroup({
+    start: new FormControl<Date | null>(null),
+    end: new FormControl<Date | null>(null),
+  	});
 	constructor(
 		private dialog: MatDialog
 	) {

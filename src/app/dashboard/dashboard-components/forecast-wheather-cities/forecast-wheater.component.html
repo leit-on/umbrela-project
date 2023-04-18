@@ -76,13 +76,22 @@
 
     </mat-card-actions>
 
-    <mat-grid-list [gridCols]="{xs: 1, sm: 2, md: 2, lg: 2, xl: 2}" class="header-14-sub" rowHeight="fit"
+
+
+
+
+    <mat-grid-list [gridCols]="{xs: 1, sm: 2, md: 2, lg: 2, xl: 2}" class="header-14-sub" 
       fxLayout="row wrap" rowHeight="13rem">
 
       <div *ngFor="let item of forecastCities">
-        <mat-grid-tile style="height: calc(0vh - 24px)" fxLayout="row wrap">
-          <mat-card class="oh text-left little-profile" style="align-content: left;" fxFlex.gt-md="100"  style="margin-top: -35px; max-width: 250px;">
-            <mat-card-content>
+
+
+
+
+
+        <!-- <mat-grid-tile style="height: calc(100vh - 24px)" fxLayout="row wrap">
+          <mat-card class="oh text-left little-profile" style="align-content: left;" fxFlex.gt-md="100"  style="margin-top: -35px; width: 250px;">
+            <mat-card-content >
               <div>
                 <h6 class="m-t-0  text-center" style="color: rgb(145, 145, 145);  font-size: 20px; font-weight: bold;">
                   <mat-icon>{{item.icon}}</mat-icon>{{item.city}} - {{item.distance}}km
@@ -104,11 +113,17 @@
             </mat-card-content>
           </mat-card>
 
-        </mat-grid-tile>
+        </mat-grid-tile> -->
       </div>
 
 
+
+
     </mat-grid-list>
+
+
+
+    
     <mat-paginator #paginator class="demo-paginator" (page)="handlePageEvent($event)" [length]="lengthPaginate"
       [pageSize]="pageSize" [disabled]="disabled" [showFirstLastButtons]="showFirstLastButtons"
       [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []" [hidePageSize]="hidePageSize"
@@ -117,3 +132,4 @@
   </mat-card-content>
 
 </mat-card>
+

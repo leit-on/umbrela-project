@@ -1,9 +1,64 @@
 <!-- ============================================================== -->
 <!-- Simple four boxes Row -->
 <!-- ============================================================== -->
+
+<script src="https://fonts.googleapis.com" >
+</script>
+<script src="https://fonts.gstatic.com" >
+</script>
+<script src="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" >
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" >
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" >
+</script> -->
+<!-- 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js" >
+</script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" >
+</script> -->
+<!-- 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+ -->
+
+<!-- <div class="date_container" >
+  <mat-form-field  style="width: 300px;">
+    <mat-label>Entre com aaa data</mat-label>
+      <mat-date-range-input [formGroup]="range" [rangePicker]="picker" >
+        <input matStartDate formControlName="start" placeholder="Start date">
+        <input matEndDate formControlName="end" placeholder="End date">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+  
+  
+    <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Invalid start date</mat-error>
+    <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Invalid end date</mat-error>
+  </mat-form-field>
+</div> -->
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div id="top"></div>
 
+
+<div class="container-fluid bg-primary py-5 mb-5 hero-header"  style="margin: -20px;">
+  <div class="container py-5">
+      <div class="row justify-content-center py-5">
+          <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+              <h1 class="display-3 text-white mb-3 animated slideInDown" style="font-family: Cursive" style="margin: 50px;">Busque o sol na sua trip</h1>
+              <p class="fs-4 text-white mb-4 animated slideInDown">Encontre o local ideal para sua proxima viagem aqui</p>
+              <div class="position-relative w-75 mx-auto animated slideInDown">
+
+
+
+                  <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <div fxLayout="row" fxLayoutWrap="wrap">
   <!-- Card column -->
 
@@ -17,7 +72,7 @@
         <mat-spinner></mat-spinner>  
         <mat-progress-bar mode="indeterminate" value="40"></mat-progress-bar>  
       </div> -->
-      <mat-tab-group style="width: 100%;" animationDuration="0ms">
+      <mat-tab-group style="width: 100%; min-height:900px" animationDuration="0ms">
  
         <div *ngFor="let tab of tabForecast">
           <mat-tab class="center" [label]=tab.title flex>
@@ -26,10 +81,10 @@
               {{tab.title_day_week}}
             </ng-template>
             <div fxLayout="row wrap">
-              <div fxFlex.gt-sm="40" fxFlex.gt-lg="40" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100"
+              <!-- <div fxFlex.gt-sm="40" fxFlex.gt-lg="40" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100"
                 style="margin-top: 40px;">
                 <app-forecast-wheater [forecastDay]="tab.forecastDay"></app-forecast-wheater>
-              </div>
+              </div> -->
               <div fxFlex.gt-sm="40" fxFlex.gt-lg="60" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100" style="margin-top: -10px;">
                 <app-forecast-wheater-cities [forecastCities]="tab.forecastCities" [lengthPaginate]="8" [pageIndexPaginate]='pageIndexPaginate' (changeFilter)="changeFilter($event)" (changePage)="changePage($event)" (getDetailCity)="getDetailCity($event)"></app-forecast-wheater-cities>
               </div>
@@ -71,3 +126,134 @@
     <app-activity-timeline></app-activity-timeline>
   </div> -->
 </div>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-1.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-3.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-1.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-3.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-2.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-3.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" href="#carouselExampleControls" data-slide="next" >
+
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<p class="mt-5 text-center">Get a step-by-step written explanation here: <a href="https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/" target="_blank">Bootstrap Carousel Card Slider
+  </a> </p>
+
+<p class="mt-3 text-center">Get a step-by-step video explanation here: <a href="https://youtu.be/kHPm_AlxP7U" target="_blank">Bootstrap Carousel Card Slider
+  </a> </p>
