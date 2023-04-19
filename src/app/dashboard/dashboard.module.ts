@@ -13,6 +13,8 @@ import { OurVisiterComponent } from './dashboard-components/our-visiter/our-visi
 import { ProfileComponent } from './dashboard-components/profile/profile.component';
 import { ForecastWhetherComponent } from './dashboard-components/forecast-wheather/forecast-wheater.component';
 import { ForecastWhetherCitiesComponent } from './dashboard-components/forecast-wheather-cities/forecast-wheater.component';
+import { ForecastCarouselComponent } from './dashboard-components/foracast-carousel/forecast-carousel.component';
+
 import { ProgressSpinnerDialogComponent } from './dashboard-components/spinner-dialog-component/progress-spinner-dialog.component';
 
 
@@ -32,6 +34,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     
     RouterModule.forChild(DashboardRoutes)
   ],
-  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent,GridColsDirective, ProgressSpinnerDialogComponent, ProfileComponent,ForecastWhetherCitiesComponent,ForecastWhetherComponent, ContactsComponent, ActivityTimelineComponent]
+  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent,GridColsDirective, ProgressSpinnerDialogComponent, ForecastCarouselComponent, ProfileComponent,ForecastWhetherCitiesComponent,ForecastWhetherComponent, ContactsComponent, ActivityTimelineComponent]
 })
 export class DashboardModule {}

@@ -1,0 +1,119 @@
+<mat-card *ngIf="forecastCities">
+  <mat-card-content>
+    <mat-card-title>Cidades com sol nas próximidades:</mat-card-title>
+    <mat-card-actions align="end">
+
+
+      <mat-form-field class="demo-chip-list">
+        <mat-chip-list #chipList>
+          <mat-chip *ngFor="let filter of filters" [selectable]="selectable" [removable]="removable"
+            (removed)="removeFilter(filter)" style="font-size: small;">
+            {{filter.name}}
+            <mat-icon matChipRemove *ngIf="removable" style=" transform: scale(0.8);">cancel</mat-icon>
+          </mat-chip>
+          <!-- <input placeholder="Filtros..."
+                 [matChipInputFor]="chipList"
+                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                 [matChipInputAddOnBlur]="addOnBlur"
+                 (matChipInputTokenEnd)="add($event)" /> -->
+        </mat-chip-list>
+      </mat-form-field>
+
+      <button mat-button color="primary" [matMenuTriggerFor]="menu"
+        #menuFilters="matMenuTrigger">Filtrar({{filters_size}})</button>
+
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="ordenate">Ordenar</button>
+        <button mat-menu-item [matMenuTriggerFor]="climate">Clima</button>
+
+        <button mat-menu-item>Turismo</button>
+
+      </mat-menu>
+
+      <!-- <mat-menu #vertebrates="matMenu">
+        <button mat-menu-item>Mais relevantes</button>
+        <button mat-menu-item >Mais Próximos</button>
+        <button mat-menu-item >Mais Quente</button>
+        <button mat-menu-item >Mais Sol</button>
+
+      </mat-menu> -->
+      <mat-menu #ordenate="matMenu">
+        <mat-form-field appearance="fill">
+          <mat-label>selecione..</mat-label>
+          <mat-select placeholder="Name" (click)="$event.stopPropagation();$event.preventDefault"
+            (selectionChange)="setFilterOrdenate(menuFilters, $event.value, 'ordenate')" [(ngModel)]="ordenate_filter_initial">
+            <mat-option *ngFor="let name of ordenate_filters" [value]="name">
+              {{ name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-menu>
+
+      <mat-menu #climate="matMenu">
+        <mat-form-field appearance="fill">
+          <mat-label>selecione...</mat-label>
+          <mat-select placeholder="Name" (click)="$event.stopPropagation();$event.preventDefault"
+            (selectionChange)="setFilterClimates(menuFilters, $event.value, 'climate')"  [(ngModel)]="climate_filter_initial">
+            <mat-option *ngFor="let name of climates" [value]="name">
+              {{ name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-menu>
+
+      <mat-menu #climate="matMenu">
+        <mat-form-field appearance="fill">
+          <mat-label>selecione...</mat-label>
+          <mat-select placeholder="Name" (click)="$event.stopPropagation();$event.preventDefault"
+            (selectionChange)="setFilterClimates(menuFilters, $event.value, 'climate')">
+            <mat-option *ngFor="let name of climates" [value]="name">
+              {{ name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-menu>
+
+    </mat-card-actions>
+
+    <mat-grid-list [gridCols]="{xs: 1, sm: 2, md: 2, lg: 2, xl: 2}" class="header-14-sub" rowHeight="fit"
+      fxLayout="row wrap" rowHeight="13rem">
+
+      <div *ngFor="let item of forecastCities">
+        <mat-grid-tile style="height: calc(0vh - 24px)" fxLayout="row wrap">
+          <mat-card class="oh text-left little-profile" style="align-content: left;" fxFlex.gt-md="100"  style="margin-top: -35px; max-width: 250px;">
+            <mat-card-content>
+              <div>
+                <h6 class="m-t-0  text-center" style="color: rgb(145, 145, 145);  font-size: 20px; font-weight: bold;">
+                  <mat-icon>{{item.icon}}</mat-icon>{{item.city}} - {{item.distance}}km
+                </h6>
+              </div>
+              <div fxLayout="row wrap" fxLayoutWrap="wrap" style="margin-top: -25px;">
+
+                <div fxFlex.gt-sm="63.33%" fxFlex.gt-xs="33.33%" fxFlex="70">
+                  <h4 class="m-0 font-light">{{item.climate}}</h4>
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="30">
+                  <h5 class="m-0 font-light">{{item.rain}}%</h5>
+                  <small>Chuva</small>
+                </div>
+              </div>
+              <mat-card-actions class="text-center"  style="max-height: 30px; text-align: center;">
+                <button mat-raised-button color="warn" style="text-align: center;" (click)="navigateDetailCity(item)">Detalhes</button>
+              </mat-card-actions>
+            </mat-card-content>
+          </mat-card>
+
+        </mat-grid-tile>
+      </div>
+
+
+    </mat-grid-list>
+    <mat-paginator #paginator class="demo-paginator" (page)="handlePageEvent($event)" [length]="lengthPaginate"
+      [pageSize]="pageSize" [disabled]="disabled" [showFirstLastButtons]="showFirstLastButtons"
+      [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []" [hidePageSize]="hidePageSize"
+      [pageIndex]="pageIndexPaginate" aria-label="Select page">
+    </mat-paginator>
+  </mat-card-content>
+
+</mat-card>

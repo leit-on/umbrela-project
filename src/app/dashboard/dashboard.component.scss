@@ -33,11 +33,11 @@ mat-tab-header {
 */
 
 @media (max-width: 480px) {
-.header-14-sub {min-height: 400px;}
+.header-14-sub {min-height: 700px;}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-.header-14-sub {min-height: 500px;}
+.header-14-sub {min-height: 700px;}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -45,7 +45,7 @@ mat-tab-header {
 }
 
 @media (min-width: 900px) {
-.header-14-sub {min-height: 400px;}
+.header-14-sub {min-height: 800px;}
 }
 
 .mat-tab-nav-bar {
@@ -562,7 +562,7 @@ mat-tab-header {
     width: calc(100% / 2);
   }
   .image-wrapper {
-    height: 20vw;
+    height: 15vw;
     margin: 0 auto;
   }
 }

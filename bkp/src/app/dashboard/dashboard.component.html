@@ -1,0 +1,73 @@
+<!-- ============================================================== -->
+<!-- Simple four boxes Row -->
+<!-- ============================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="top"></div>
+
+<div fxLayout="row" fxLayoutWrap="wrap">
+  <!-- Card column -->
+
+
+  <div fxFlex.gt-sm="100%" fxFlex="100">
+
+
+    <mat-card>
+
+      <!-- <div fxLayout="row">
+        <mat-spinner></mat-spinner>  
+        <mat-progress-bar mode="indeterminate" value="40"></mat-progress-bar>  
+      </div> -->
+      <mat-tab-group style="width: 100%;" animationDuration="0ms">
+ 
+        <div *ngFor="let tab of tabForecast">
+          <mat-tab class="center" [label]=tab.title flex>
+            <ng-template mat-tab-label>
+              {{tab.title}}<br />
+              {{tab.title_day_week}}
+            </ng-template>
+            <div fxLayout="row wrap">
+              <div fxFlex.gt-sm="40" fxFlex.gt-lg="40" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100"
+                style="margin-top: 40px;">
+                <app-forecast-wheater [forecastDay]="tab.forecastDay"></app-forecast-wheater>
+              </div>
+              <div fxFlex.gt-sm="40" fxFlex.gt-lg="60" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100" style="margin-top: -10px;">
+                <app-forecast-wheater-cities [forecastCities]="tab.forecastCities" [lengthPaginate]="8" [pageIndexPaginate]='pageIndexPaginate' (changeFilter)="changeFilter($event)" (changePage)="changePage($event)" (getDetailCity)="getDetailCity($event)"></app-forecast-wheater-cities>
+              </div>
+            </div>
+          </mat-tab>
+        </div>
+      </mat-tab-group>
+    </mat-card>
+  </div>
+</div>
+
+<div fxLayout="row wrap">
+
+
+  <!-- column -->
+  <!-- <div fxFlex.gt-lg="65" fxFlex.gt-md="65" fxFlex.gt-xs="100" fxFlex="100">
+    <app-sales-overview></app-sales-overview>
+  </div> -->
+  <!-- column -->
+  <!-- column -->
+  <!-- <div fxFlex.gt-lg="35" fxFlex.gt-md="35" fxFlex.gt-xs="100" fxFlex="100">
+    <app-our-visiter></app-our-visiter>
+  </div> -->
+  <!-- column -->
+</div>
+
+<!-- ============================================================== -->
+<!-- Image Card row-->
+<!-- ============================================================== -->
+<div fxLayout="row wrap">
+  <!-- Card column -->
+  <!-- <div fxFlex.gt-lg="25" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100">
+    <app-profile></app-profile>
+    <app-contacts></app-contacts>
+  </div> -->
+  <!-- Card column -->
+  <!-- Card column -->
+  <!-- <div fxFlex.gt-lg="75" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100">
+    <app-activity-timeline></app-activity-timeline>
+  </div> -->
+</div>

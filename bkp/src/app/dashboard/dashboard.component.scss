@@ -1,0 +1,63 @@
+mat-tab-header {
+    align-self: right!important;
+}
+
+::ng-deep mat-tab-label {
+    align-self: center;
+}
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.center {
+  @at-root div#{&} { 
+    text-align : center;
+  }
+}
+.left {
+  @at-root div#{&} { 
+    text-align : left;
+  }
+}
+.right {
+  @at-root div#{&} { 
+    text-align : right;
+  }
+}
+
+
+.header-14-sub {
+  min-height: 900px; /* set default height */
+}
+
+/* For media queries to work on smartphones, be sure to add a meta tag similar to the following in the head of your document 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*/
+
+@media (max-width: 480px) {
+.header-14-sub {min-height: 400px;}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+.header-14-sub {min-height: 500px;}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+.header-14-sub { min-height: 900px;}
+}
+
+@media (min-width: 900px) {
+.header-14-sub {min-height: 400px;}
+}
+
+.mat-tab-nav-bar {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.custom.mat-card{
+  margin-top: 100px; /* set default height */
+ }
+
+ .transparent .mat-dialog-container {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.0);
+}

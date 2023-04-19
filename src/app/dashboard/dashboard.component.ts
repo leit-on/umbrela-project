@@ -20,10 +20,10 @@ export class DashboardComponent implements AfterViewInit {
 	value = "São Paulo";
 	pageIndexPaginate = 0;
 
-	  range = new FormGroup({
-    start: new FormControl<Date | null>(null),
-    end: new FormControl<Date | null>(null),
-  	});
+	//   range = new FormGroup({
+    // start: new FormControl<Date | null>(null),
+    // end: new FormControl<Date | null>(null),
+  	// });
 	constructor(
 		private dialog: MatDialog
 	) {
@@ -489,4 +489,5 @@ export class DashboardComponent implements AfterViewInit {
 		this.showProgressSpinnerUntilExecuted(new Observable(this.myObservable));
 		console.log('get detalhes cidade', event)
 	}
+
 }
