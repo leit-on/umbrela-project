@@ -51,6 +51,9 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   ngOnInit(): void {
     // if (this.forecastCities?.length != undefined)
     //   this.length = this.forecastCities?.length
+    this.filters.push({ name: "mais relevantes", type: "ordenate" });
+    this.filters_size = this.filters_size + 1;
+    this.changeFilter.emit(this.filters);
   }
 
   setFilterOrdenate(menuTrigger: MatMenuTrigger, filter: string, type: string) {
