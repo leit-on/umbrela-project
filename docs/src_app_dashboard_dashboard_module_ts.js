@@ -351,22 +351,22 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4)(5, "div", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "img", 6);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 7)(8, "h5", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 7)(8, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "S\u00E3o Sebasti\u00E3o - 25 km");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 9)(11, "div", 10)(12, "div", 11)(13, "h3", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 9)(11, "div", 10)(12, "div", 11)(13, "h4", 12);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Manh\u00E3 24\u00B0");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "small");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Ensolarado");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 11)(18, "h3", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 11)(18, "h4", 12);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Tarde 29\u00B0");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "small");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Ensolarado");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 11)(23, "h3", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 11)(23, "h4", 12);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Noite 23\u00B0");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "small");
@@ -441,10 +441,10 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 15)(86, "div", 3)(87, "div", 4)(88, "div", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](89, "img", 16);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "div", 7)(91, "h5", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "div", 7)(91, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "Carrancas - 442 km");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "div", 9)(94, "div", 10)(95, "div", 17)(96, "h3", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "div", 9)(94, "div", 10)(95, "div", 17)(96, "h4", 12);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "Manh\u00E3 24\u00B0");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "small");
@@ -531,10 +531,10 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](168, "div", 15)(169, "div", 3)(170, "div", 4)(171, "div", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](172, "img", 18);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](173, "div", 7)(174, "h5", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](173, "div", 7)(174, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](175, "Paranapiacaba - 62 km");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](176, "div", 9)(177, "div", 10)(178, "div", 11)(179, "h3", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](176, "div", 9)(177, "div", 10)(178, "div", 11)(179, "h4", 12);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](180, "Manh\u00E3 24\u00B0");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](181, "small");
@@ -1476,7 +1476,7 @@ function DashboardComponent_div_15_ng_template_2_Template(rf, ctx) {
     const tab_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", tab_r1.title, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", tab_r1.title_day_week, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" (", tab_r1.title_day_week, ") ");
   }
 }
 function DashboardComponent_div_15_Template(rf, ctx) {
