@@ -54,6 +54,9 @@ export class ForecastWhetherCitiesComponent implements OnInit {
     this.filters.push({ name: "mais relevantes", type: "ordenate" });
     this.filters_size = this.filters_size + 1;
     this.changeFilter.emit(this.filters);
+    this.filters.push({ name: "ensolarado", type: "climate" });
+    this.filters_size = this.filters_size + 1;
+    this.changeFilter.emit(this.filters);
   }
 
   setFilterOrdenate(menuTrigger: MatMenuTrigger, filter: string, type: string) {

@@ -917,6 +917,12 @@ class ForecastWhetherCitiesComponent {
     });
     this.filters_size = this.filters_size + 1;
     this.changeFilter.emit(this.filters);
+    this.filters.push({
+      name: "ensolarado",
+      type: "climate"
+    });
+    this.filters_size = this.filters_size + 1;
+    this.changeFilter.emit(this.filters);
   }
   setFilterOrdenate(menuTrigger, filter, type) {
     console.log('filter:', filter);
