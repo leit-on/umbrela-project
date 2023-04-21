@@ -349,7 +349,7 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
   selectors: [["app-forecast-carousel"]],
   decls: 309,
   vars: 0,
-  consts: [["id", "carouselExampleControls", "data-bs-ride", "carousel", 1, "carousel", "slide"], ["fxLayout", "row wrap", 1, "carousel-inner", 2, "margin", "0px"], [1, "carousel-item", "active"], [1, "cards-wrapper"], [1, "card"], ["align", "center", 1, "image-wrapper"], ["src", "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], [1, "card-body"], [1, "card-title"], [1, "post-previsao-do-tempo__previsao"], [1, "post-previsao-do-tempo__previsao-do-dia"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--1"], [1, "pro-img"], ["src", "assets/images/landscapes/cloud.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2"], ["src", "assets/images/landscapes/sun.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2n"], [1, "post-previsao-do-tempo__temperaturas"], [1, "post-previsao-do-tempo__temperatura"], [1, "post-previsao-do-tempo__temperatura--valor"], [1, "post-previsao-do-tempo__temperatura--sufixo"], [1, "card-text", 2, "margin-top", "20px"], ["mat-button", "", "color", "primary"], ["src", "assets/images/landscapes/google-maps.png", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], ["mat-button", "", "color", "primary", 2, "margin-left", "25px"], ["src", "https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg", "align", "center", "alt", "..."], ["fxLayout", "row", "fxLayoutWrap", "wrap", 2, "margin-top", "-10px"], [2, "margin-top", "30px", "width", "100%"], ["fxFlex.gt-sm", "33.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "100"], [1, "m-0", "font-light"], ["href", "#", 1, "btn", "btn-primary"], [1, "carousel-item"], ["src", "https://images.pexels.com/photos/6469984/pexels-photo-6469984.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], ["src", "https://img.freepik.com/vetores-premium/montanhas-e-construcao-em-circulo-paisagem-de-verao-vista-da-pequena-casa-na-natureza_697711-198.jpg?w=2000", "align", "center", "alt", "..."], ["fxFlex.gt-sm", "40.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "100"], ["src", "https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], [2, "margin-top", "30px"], [1, "card-text"], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "next", "onclick", "$('#carouselExampleControls').carousel('prev')", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"]],
+  consts: [["id", "carouselExampleControls", "data-bs-ride", "carousel", 1, "carousel", "slide"], ["fxLayout", "row wrap", 1, "carousel-inner", 2, "margin", "0px"], [1, "carousel-item", "active"], [1, "cards-wrapper"], [1, "card"], ["align", "center", 1, "image-wrapper"], ["src", "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], [1, "card-body"], [1, "card-title"], [1, "post-previsao-do-tempo__previsao"], [1, "post-previsao-do-tempo__previsao-do-dia"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--1"], [1, "pro-img"], ["src", "assets/images/landscapes/cloud.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2"], ["src", "assets/images/landscapes/sun.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2n"], [1, "post-previsao-do-tempo__temperaturas"], [1, "post-previsao-do-tempo__temperatura"], [1, "post-previsao-do-tempo__temperatura--valor"], [1, "post-previsao-do-tempo__temperatura--sufixo"], [1, "card-text", 2, "margin-top", "20px"], ["mat-button", "", "color", "primary"], ["src", "assets/images/landscapes/google-maps.png", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], ["mat-button", "", "color", "primary", 2, "margin-left", "15px"], ["src", "https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg", "align", "center", "alt", "..."], ["fxLayout", "row", "fxLayoutWrap", "wrap", 2, "margin-top", "-10px"], [2, "margin-top", "30px", "width", "100%"], ["fxFlex.gt-sm", "33.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "100"], [1, "m-0", "font-light"], ["href", "#", 1, "btn", "btn-primary"], [1, "carousel-item"], ["src", "https://images.pexels.com/photos/6469984/pexels-photo-6469984.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], ["src", "https://img.freepik.com/vetores-premium/montanhas-e-construcao-em-circulo-paisagem-de-verao-vista-da-pequena-casa-na-natureza_697711-198.jpg?w=2000", "align", "center", "alt", "..."], ["fxFlex.gt-sm", "40.33%", "fxFlex.gt-xs", "33.33%", "fxFlex", "100"], ["src", "https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], [2, "margin-top", "30px"], [1, "card-text"], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "next", "onclick", "$('#carouselExampleControls').carousel('prev')", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"]],
   template: function ForecastCarouselComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4)(5, "div", 5);
@@ -712,12 +712,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/grid-list */ 2642);
 /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/icon */ 7822);
 /* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/menu */ 8589);
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/paginator */ 6060);
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/select */ 7371);
-/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/flex-layout/flex */ 6722);
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/select */ 7371);
+/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/flex-layout/flex */ 6722);
 /* harmony import */ var _grid_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../grid-directive */ 8623);
 /* harmony import */ var _foracast_carousel_forecast_carousel_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../foracast-carousel/forecast-carousel.component */ 8332);
-
 
 
 
@@ -738,38 +736,51 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = ["menuFilters"];
 function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_mat_icon_2_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-icon", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-icon", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, "cancel");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
   }
 }
 function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_Template(rf, ctx) {
   if (rf & 1) {
-    const _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-chip", 21);
+    const _r15 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-chip", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("removed", function ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_Template_mat_chip_removed_0_listener() {
-      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r16);
-      const filter_r13 = restoredCtx.$implicit;
-      const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r15.removeFilter(filter_r13));
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r15);
+      const filter_r12 = restoredCtx.$implicit;
+      const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r14.removeFilter(filter_r12));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_mat_icon_2_Template, 2, 0, "mat-icon", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, ForecastWhetherCitiesComponent_mat_card_0_mat_chip_8_mat_icon_2_Template, 2, 0, "mat-icon", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
-    const filter_r13 = ctx.$implicit;
+    const filter_r12 = ctx.$implicit;
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("selectable", ctx_r2.selectable)("removable", ctx_r2.removable);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", filter_r13.name, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", filter_r12.name, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r2.removable);
   }
 }
 function ForecastWhetherCitiesComponent_mat_card_0_mat_option_26_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-option", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-option", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const name_r16 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", name_r16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", name_r16, " ");
+  }
+}
+function ForecastWhetherCitiesComponent_mat_card_0_mat_option_33_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-option", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
   }
@@ -780,9 +791,9 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_option_26_Template(rf, ct
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", name_r17, " ");
   }
 }
-function ForecastWhetherCitiesComponent_mat_card_0_mat_option_33_Template(rf, ctx) {
+function ForecastWhetherCitiesComponent_mat_card_0_mat_option_40_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-option", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-option", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
   }
@@ -791,19 +802,6 @@ function ForecastWhetherCitiesComponent_mat_card_0_mat_option_33_Template(rf, ct
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", name_r18);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", name_r18, " ");
-  }
-}
-function ForecastWhetherCitiesComponent_mat_card_0_mat_option_40_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-option", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-  }
-  if (rf & 2) {
-    const name_r19 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", name_r19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", name_r19, " ");
   }
 }
 function ForecastWhetherCitiesComponent_mat_card_0_div_42_Template(rf, ctx) {
@@ -820,12 +818,9 @@ const _c1 = function () {
     xl: 2
   };
 };
-const _c2 = function () {
-  return [];
-};
 function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
   if (rf & 1) {
-    const _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-card", 1)(1, "mat-card-content")(2, "mat-card-title");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, "Sol nas proximidades:");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -852,14 +847,14 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
       $event.stopPropagation();
       return $event.preventDefault;
     })("selectionChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_selectionChange_25_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22);
       const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](10);
-      const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r22.setFilterOrdenate(_r3, $event.value, "ordenate"));
+      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r21.setFilterOrdenate(_r3, $event.value, "ordenate"));
     })("ngModelChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_ngModelChange_25_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r23);
-      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r24.ordenate_filter_initial = $event);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22);
+      const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r23.ordenate_filter_initial = $event);
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](26, ForecastWhetherCitiesComponent_mat_card_0_mat_option_26_Template, 2, 2, "mat-option", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
@@ -871,14 +866,14 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
       $event.stopPropagation();
       return $event.preventDefault;
     })("selectionChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_selectionChange_32_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22);
       const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](10);
-      const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r26.setFilterClimates(_r3, $event.value, "climate"));
+      const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r25.setFilterClimates(_r3, $event.value, "climate"));
     })("ngModelChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_ngModelChange_32_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r23);
-      const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r27.climate_filter_initial = $event);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22);
+      const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r26.climate_filter_initial = $event);
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](33, ForecastWhetherCitiesComponent_mat_card_0_mat_option_33_Template, 2, 2, "mat-option", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
@@ -890,23 +885,16 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
       $event.stopPropagation();
       return $event.preventDefault;
     })("selectionChange", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_select_selectionChange_39_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22);
       const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](10);
-      const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r29.setFilterClimates(_r3, $event.value, "climate"));
+      const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r28.setFilterClimates(_r3, $event.value, "climate"));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](40, ForecastWhetherCitiesComponent_mat_card_0_mat_option_40_Template, 2, 2, "mat-option", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](41, "mat-grid-list", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](42, ForecastWhetherCitiesComponent_mat_card_0_div_42_Template, 1, 0, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](43, "app-forecast-carousel");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](44, "mat-paginator", 19, 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("page", function ForecastWhetherCitiesComponent_mat_card_0_Template_mat_paginator_page_44_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r23);
-      const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r30.handlePageEvent($event));
-    });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
@@ -935,11 +923,9 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r0.climates);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("gridCols", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction0"](19, _c1));
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("gridCols", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction0"](12, _c1));
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r0.forecastCities);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("length", ctx_r0.lengthPaginate)("pageSize", ctx_r0.pageSize)("disabled", ctx_r0.disabled)("showFirstLastButtons", ctx_r0.showFirstLastButtons)("pageSizeOptions", ctx_r0.showPageSizeOptions ? ctx_r0.pageSizeOptions : _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction0"](20, _c2))("hidePageSize", ctx_r0.hidePageSize)("pageIndex", ctx_r0.pageIndexPaginate);
   }
 }
 class ForecastWhetherCitiesComponent {
@@ -1077,16 +1063,16 @@ ForecastWhetherCitiesComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPOR
   },
   decls: 1,
   vars: 1,
-  consts: [["style", "margin: -20px;", 4, "ngIf"], [2, "margin", "-20px"], ["align", "end"], [1, "demo-chip-list"], ["chipList", ""], ["style", "font-size: small;", 3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], ["mat-button", "", "color", "primary", 3, "matMenuTriggerFor"], ["menuFilters", "matMenuTrigger"], ["menu", "matMenu"], ["mat-menu-item", "", 3, "matMenuTriggerFor"], ["mat-menu-item", ""], ["ordenate", "matMenu"], ["appearance", "fill"], ["placeholder", "Name", 3, "ngModel", "click", "selectionChange", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], ["climate", "matMenu"], ["placeholder", "Name", 3, "click", "selectionChange"], ["fxLayout", "row wrap", "rowHeight", "13rem", 1, "header-14-sub", 3, "gridCols"], [4, "ngFor", "ngForOf"], ["aria-label", "Select page", 1, "demo-paginator", 3, "length", "pageSize", "disabled", "showFirstLastButtons", "pageSizeOptions", "hidePageSize", "pageIndex", "page"], ["paginator", ""], [2, "font-size", "small", 3, "selectable", "removable", "removed"], ["matChipRemove", "", "style", " transform: scale(0.8);", 4, "ngIf"], ["matChipRemove", "", 2, "transform", "scale(0.8)"], [3, "value"]],
+  consts: [["style", "margin: -20px;", 4, "ngIf"], [2, "margin", "-20px"], ["align", "end"], [1, "demo-chip-list"], ["chipList", ""], ["style", "font-size: small;", 3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], ["mat-button", "", "color", "primary", 3, "matMenuTriggerFor"], ["menuFilters", "matMenuTrigger"], ["menu", "matMenu"], ["mat-menu-item", "", 3, "matMenuTriggerFor"], ["mat-menu-item", ""], ["ordenate", "matMenu"], ["appearance", "fill"], ["placeholder", "Name", 3, "ngModel", "click", "selectionChange", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], ["climate", "matMenu"], ["placeholder", "Name", 3, "click", "selectionChange"], ["fxLayout", "row wrap", "rowHeight", "13rem", 1, "header-14-sub", 3, "gridCols"], [4, "ngFor", "ngForOf"], [2, "font-size", "small", 3, "selectable", "removable", "removed"], ["matChipRemove", "", "style", " transform: scale(0.8);", 4, "ngIf"], ["matChipRemove", "", 2, "transform", "scale(0.8)"], [3, "value"]],
   template: function ForecastWhetherCitiesComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, ForecastWhetherCitiesComponent_mat_card_0_Template, 46, 21, "mat-card", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, ForecastWhetherCitiesComponent_mat_card_0_Template, 44, 13, "mat-card", 0);
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.forecastCities);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgModel, _angular_material_core__WEBPACK_IMPORTED_MODULE_6__.MatOption, _angular_material_button__WEBPACK_IMPORTED_MODULE_7__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardContent, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardTitle, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardActions, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChipList, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChip, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChipRemove, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__.MatLabel, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__.MatGridList, _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__.MatIcon, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenu, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenuItem, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenuTrigger, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__.MatPaginator, _angular_material_select__WEBPACK_IMPORTED_MODULE_15__.MatSelect, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_16__.DefaultLayoutDirective, _grid_directive__WEBPACK_IMPORTED_MODULE_0__.GridColsDirective, _foracast_carousel_forecast_carousel_component__WEBPACK_IMPORTED_MODULE_1__.ForecastCarouselComponent],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgModel, _angular_material_core__WEBPACK_IMPORTED_MODULE_6__.MatOption, _angular_material_button__WEBPACK_IMPORTED_MODULE_7__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardContent, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardTitle, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardActions, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChipList, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChip, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChipRemove, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__.MatLabel, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__.MatGridList, _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__.MatIcon, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenu, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenuItem, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenuTrigger, _angular_material_select__WEBPACK_IMPORTED_MODULE_14__.MatSelect, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_15__.DefaultLayoutDirective, _grid_directive__WEBPACK_IMPORTED_MODULE_0__.GridColsDirective, _foracast_carousel_forecast_carousel_component__WEBPACK_IMPORTED_MODULE_1__.ForecastCarouselComponent],
   encapsulation: 2
 });
 
