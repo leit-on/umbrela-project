@@ -1,99 +1,128 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner"fxLayout="row wrap" style="margin: 0px;">
+  <div class="carousel-inner" fxLayout="row wrap" style="margin: 0px;">
     <div class="carousel-item active">
       <div class="cards-wrapper">
 
 
-        <div class="card" >
+        <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center" alt="..." >
+            <img
+              src="https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+              align="center" alt="...">
           </div>
           <div class="card-body">
             <h3 class="card-title">São Sebastião - 25 km</h3>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
-              <div style="margin-top: 30px; width: 100%;">
-                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h4 class="m-0 font-light">Manhã 24°</h4>
-                  <small>Ensolarado</small>
+            <div class="post-previsao-do-tempo__previsao">
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--1">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>manhã</div>
               </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h4 class="m-0 font-light">Tarde 29°</h4>
-                  <small>Ensolarado</small>
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/sun.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>tarde</div>
               </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h4 class="m-0 font-light">Noite 23°</h4 >
-                  <small>Ensolarado</small>
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2n">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>noite</div>
+              </div>
+              <div class="post-previsao-do-tempo__temperaturas">
+                <div class="post-previsao-do-tempo__temperatura"><span
+                    class="post-previsao-do-tempo__temperatura--valor">31º</span><span
+                    class="post-previsao-do-tempo__temperatura--sufixo">max</span></div>
+                <div class="post-previsao-do-tempo__temperatura"><span
+                    class="post-previsao-do-tempo__temperatura--valor">18º</span><span
+                    class="post-previsao-do-tempo__temperatura--sufixo">min</span></div>
               </div>
             </div>
 
+            <p class="card-text" style="margin-top: 20px;">Um bom dia para curtir a praia.</p>
 
+            <button mat-button color="primary">
+              <img src="assets/images/landscapes/google-maps.png" style="max-width: 70px; max-height: 30px;" alt="user">
+              Ver rota
+            </button>
+
+            <button mat-button color="primary" style="margin-left: 25px;">
+              <mat-icon>share</mat-icon>
+              Compartilhar
+            </button>
           </div>
-          
-            <p class="card-text" style="margin-top: 20px;">Hoje é um bom dia para curtir a praia.</p>
-            <a href="#" class="btn btn-primary">Ver rota</a>
-          </div>
-          
+
         </div>
-        
+
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center" alt="..." >
+            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center"
+              alt="...">
           </div>
           <div class="card-body">
             <h5 class="card-title">São Sebastião - 25 km</h5>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
+            <div fxLayout="row" fxLayoutWrap="wrap" style="margin-top: -10px;">
               <div style="margin-top: 30px; width: 100%;">
                 <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Manhã 24°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Tarde 29°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Noite 23°</h3>
                   <small>Ensolarado</small>
+                </div>
               </div>
+
+
             </div>
 
-
-          </div>
-          
             <p class="card-text" style="margin-top: 20px;">Hoje é um bom dia para curtir a praia.</p>
             <a href="#" class="btn btn-primary">Ver rota</a>
           </div>
-          
+
         </div>
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center" alt="..." >
+            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center"
+              alt="...">
           </div>
           <div class="card-body">
             <h5 class="card-title">São Sebastião - 25 km</h5>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
+            <div fxLayout="row" fxLayoutWrap="wrap" style="margin-top: -10px;">
               <div style="margin-top: 30px; width: 100%;">
                 <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Manhã 24°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Tarde 29°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Noite 23°</h3>
                   <small>Ensolarado</small>
+                </div>
               </div>
+
+
             </div>
 
-
-          </div>
-          
             <p class="card-text" style="margin-top: 20px;">Hoje é um bom dia para curtir a praia.</p>
             <a href="#" class="btn btn-primary">Ver rota</a>
           </div>
-          
+
         </div>
 
       </div>
@@ -102,93 +131,123 @@
       <div class="cards-wrapper">
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/montanhas-e-construcao-em-circulo-paisagem-de-verao-vista-da-pequena-casa-na-natureza_697711-198.jpg?w=2000" align="center" alt="..." >
+            <img
+              src="https://images.pexels.com/photos/6469984/pexels-photo-6469984.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+              align="center" alt="...">
           </div>
           <div class="card-body">
             <h3 class="card-title">Carrancas - 442 km</h3>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
-              <div style="margin-top: 30px;  width: 100%;">
-                <div fxFlex.gt-sm="40.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h4 class="m-0 font-light">Manhã 24°</h4>
-                  <small>Ensolarado</small>
+            <div class="post-previsao-do-tempo__previsao">
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--1">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>manhã</div>
               </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h3 class="m-0 font-light">Tarde 29°</h3>
-                  <small>Ensolarado</small>
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/sun.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>tarde</div>
               </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h3 class="m-0 font-light">Noite 23°</h3>
-                  <small>Ensolarado</small>
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2n">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>noite</div>
+              </div>
+              <div class="post-previsao-do-tempo__temperaturas">
+                <div class="post-previsao-do-tempo__temperatura"><span
+                    class="post-previsao-do-tempo__temperatura--valor">31º</span><span
+                    class="post-previsao-do-tempo__temperatura--sufixo">max</span></div>
+                <div class="post-previsao-do-tempo__temperatura"><span
+                    class="post-previsao-do-tempo__temperatura--valor">18º</span><span
+                    class="post-previsao-do-tempo__temperatura--sufixo">min</span></div>
               </div>
             </div>
 
+            <p class="card-text" style="margin-top: 20px;">Quem sabe curtir um verde caia bem?.</p>
+            <button mat-button color="primary">
+              <img src="assets/images/landscapes/google-maps.png" style="max-width: 70px; max-height: 30px;" alt="user">
+              Ver rota
+            </button>
 
+            <button mat-button color="primary" style="margin-left: 25px;">
+              <mat-icon>share</mat-icon>
+              Compartilhar
+            </button>
           </div>
-          
-            <p class="card-text" style="margin-top: 20px;">Quem sabe curtir um verde sol caia bem?.</p>
-            <a href="#" class="btn btn-primary">Ver rota</a>
-          </div>
-          
+
         </div>
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/montanhas-e-construcao-em-circulo-paisagem-de-verao-vista-da-pequena-casa-na-natureza_697711-198.jpg?w=2000" align="center" alt="..." >
+            <img
+              src="https://img.freepik.com/vetores-premium/montanhas-e-construcao-em-circulo-paisagem-de-verao-vista-da-pequena-casa-na-natureza_697711-198.jpg?w=2000"
+              align="center" alt="...">
           </div>
           <div class="card-body">
             <h5 class="card-title">Carrancas - 442 km</h5>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
+            <div fxLayout="row" fxLayoutWrap="wrap" style="margin-top: -10px;">
               <div style="margin-top: 30px;  width: 100%;">
                 <div fxFlex.gt-sm="40.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Manhã 24°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Tarde 29°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Noite 23°</h3>
                   <small>Ensolarado</small>
+                </div>
               </div>
+
+
             </div>
 
-
-          </div>
-          
             <p class="card-text" style="margin-top: 20px;">Quem sabe curtir um verde sol caia bem?.</p>
             <a href="#" class="btn btn-primary">Ver rota</a>
           </div>
-          
+
         </div>
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/montanhas-e-construcao-em-circulo-paisagem-de-verao-vista-da-pequena-casa-na-natureza_697711-198.jpg?w=2000" align="center" alt="..." >
+            <img
+              src="https://img.freepik.com/vetores-premium/montanhas-e-construcao-em-circulo-paisagem-de-verao-vista-da-pequena-casa-na-natureza_697711-198.jpg?w=2000"
+              align="center" alt="...">
           </div>
           <div class="card-body">
             <h5 class="card-title">Carrancas - 442 km</h5>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
+            <div fxLayout="row" fxLayoutWrap="wrap" style="margin-top: -10px;">
               <div style="margin-top: 30px;  width: 100%;">
                 <div fxFlex.gt-sm="40.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Manhã 24°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Tarde 29°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Noite 23°</h3>
                   <small>Ensolarado</small>
+                </div>
               </div>
+
+
             </div>
 
-
-          </div>
-          
             <p class="card-text" style="margin-top: 20px;">Quem sabe curtir um verde sol caia bem?.</p>
             <a href="#" class="btn btn-primary">Ver rota</a>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -196,93 +255,121 @@
       <div class="cards-wrapper">
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/paisagem-criativa-com-ferrovia-e-trem-no-circulo-do-logotipo-sinal-ambiental-ecologico-e-da-natureza-elemento-de-design-para-emblema-ou-ilustracao-vetorial-distintivo-isolado-em-um-fundo-branco_178650-8553.jpg?w=2000" align="center" alt="..." >
+            <img
+              src="https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+              align="center" alt="...">
           </div>
           <div class="card-body">
             <h3 class="card-title">Paranapiacaba - 62 km</h3>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
-              <div style="margin-top: 30px;   width: 100%;">
-                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h4 class="m-0 font-light">Manhã 24°</h4>
-                  <small>Ensolarado</small>
+            <div class="post-previsao-do-tempo__previsao">
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--1">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>manhã</div>
               </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h3 class="m-0 font-light">Tarde 29°</h3>
-                  <small>Ensolarado</small>
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/sun.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>tarde</div>
               </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
-                  <h3 class="m-0 font-light">Noite 23°</h3>
-                  <small>Ensolarado</small>
+              <div class="post-previsao-do-tempo__previsao-do-dia">
+                <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2n">
+                  <div class="pro-img">
+                    <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                  </div>
+                </div>
+                <div>noite</div>
+              </div>
+              <div class="post-previsao-do-tempo__temperaturas">
+                <div class="post-previsao-do-tempo__temperatura"><span
+                    class="post-previsao-do-tempo__temperatura--valor">31º</span><span
+                    class="post-previsao-do-tempo__temperatura--sufixo">max</span></div>
+                <div class="post-previsao-do-tempo__temperatura"><span
+                    class="post-previsao-do-tempo__temperatura--valor">18º</span><span
+                    class="post-previsao-do-tempo__temperatura--sufixo">min</span></div>
               </div>
             </div>
 
-
-          </div>
-          
             <p class="card-text" style="margin-top: 20px;">Um pouco de cidade histórica para abrir sua mente?.</p>
-            <a href="#" class="btn btn-primary">Ver rota</a>
+            <button mat-button color="primary">
+              <img src="assets/images/landscapes/google-maps.png" style="max-width: 70px; max-height: 30px;" alt="user">
+              Ver rota
+            </button>
+
+            <button mat-button color="primary" style="margin-left: 25px;">
+              <mat-icon>share</mat-icon>
+              Compartilhar
+            </button>
           </div>
-          
+
         </div>
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center" alt="..." >
+            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center"
+              alt="...">
           </div>
           <div class="card-body">
             <h5 class="card-title">São Sebastião - 25 km</h5>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
+            <div fxLayout="row" fxLayoutWrap="wrap" style="margin-top: -10px;">
               <div style="margin-top: 30px;">
                 <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Manhã 24°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Tarde 29°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Noite 23°</h3>
                   <small>Ensolarado</small>
+                </div>
               </div>
+
+
             </div>
 
-
-          </div>
-          
             <p class="card-text">Hoje é um bom dia para curtir a praia.</p>
             <a href="#" class="btn btn-primary">Ver rota</a>
           </div>
-          
+
         </div>
         <div class="card">
           <div class="image-wrapper" align="center">
-            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center" alt="..." >
+            <img src="https://img.freepik.com/vetores-premium/por-do-sol-das-palmeiras_54199-323.jpg" align="center"
+              alt="...">
           </div>
           <div class="card-body">
             <h5 class="card-title">São Sebastião - 25 km</h5>
-            <div fxLayout="row" fxLayoutWrap="wrap"  style="margin-top: -10px;">
+            <div fxLayout="row" fxLayoutWrap="wrap" style="margin-top: -10px;">
               <div style="margin-top: 30px;">
                 <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Manhã 24°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Tarde 29°</h3>
                   <small>Ensolarado</small>
-              </div>
-              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                </div>
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
                   <h3 class="m-0 font-light">Noite 23°</h3>
                   <small>Ensolarado</small>
+                </div>
               </div>
+
+
             </div>
 
-
-          </div>
-          
             <p class="card-text">Hoje é um bom dia para curtir a praia.</p>
             <a href="#" class="btn btn-primary">Ver rota</a>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -290,7 +377,8 @@
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" onclick="$('#carouselExampleControls').carousel('prev')">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"
+    onclick="$('#carouselExampleControls').carousel('prev')">
 
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>

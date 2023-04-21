@@ -1,0 +1,34 @@
+.post-previsao-do-tempo__previsao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-previsao-do-tempo__previsao-do-dia {
+    font-family: opensans,opensans-bastian,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #666;
+    width: 48px;
+}
+
+.post-previsao-do-tempo__previsao-do-dia {
+    font-family: opensans,opensans-bastian,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #666;
+    width: 48px;
+}
+
+.post-previsao-do-tempo__header {
+    font-family: opensans,opensans-bastian,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -.75px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    color: #333;
+}
