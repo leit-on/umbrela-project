@@ -5,8 +5,10 @@
   /* For media queries to work on smartphones, be sure to add a meta tag similar to the following in the head of your document 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   */
-  
-  @media (max-width: 480px) {
+  @media (max-width: 300px) and (max-width: 400px) {
+    .content-tab-foracast-carousel {max-width: 200px;}
+  }
+  @media (min-width: 400px)  and (max-width: 481px){
   .content-tab-foracast-carousel {min-width: 350px;}
   }
   
