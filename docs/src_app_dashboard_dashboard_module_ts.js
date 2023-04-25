@@ -349,7 +349,7 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
   selectors: [["app-forecast-carousel"]],
   decls: 417,
   vars: 0,
-  consts: [["id", "carouselExampleControls", "data-bs-ride", "carousel", 1, "carousel", "slide"], ["fxLayout", "row wrap", 1, "carousel-inner", 2, "margin", "0px"], [1, "carousel-item", "active"], [1, "cards-wrapper"], [1, "card"], ["align", "center", 1, "image-wrapper"], ["src", "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], [1, "card-body"], [1, "card-title"], [1, "post-previsao-do-tempo__previsao"], [1, "post-previsao-do-tempo__previsao-do-dia"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--1"], [1, "pro-img"], ["src", "assets/images/landscapes/cloud.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2"], ["src", "assets/images/landscapes/sun.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2n"], [1, "post-previsao-do-tempo__temperaturas"], [1, "post-previsao-do-tempo__temperatura"], [1, "post-previsao-do-tempo__temperatura--valor"], [1, "post-previsao-do-tempo__temperatura--sufixo"], [1, "card-text", 2, "margin-top", "20px"], ["mat-button", "", "color", "primary"], ["src", "assets/images/landscapes/google-maps.png", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "carousel-item"], ["src", "https://images.pexels.com/photos/6469984/pexels-photo-6469984.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], ["src", "https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "next", "onclick", "$('#carouselExampleControls').carousel('prev')", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"]],
+  consts: [["id", "carouselExampleControls", "data-bs-ride", "carousel", 1, "carousel", "slide", 2, "display", "contents"], ["fxLayout", "row wrap", 1, "carousel-inner", 2, "margin", "0px"], [1, "carousel-item", "active"], [1, "cards-wrapper"], [1, "card"], ["align", "center", 1, "image-wrapper"], ["src", "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], [1, "card-body"], [1, "card-title"], [1, "post-previsao-do-tempo__previsao"], [1, "post-previsao-do-tempo__previsao-do-dia"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--1"], [1, "pro-img"], ["src", "assets/images/landscapes/cloud.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2"], ["src", "assets/images/landscapes/sun.jpg", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], [1, "post-previsao-do-tempo__icon", "post-previsao-do-tempo__icon--2n"], [1, "post-previsao-do-tempo__temperaturas"], [1, "post-previsao-do-tempo__temperatura"], [1, "post-previsao-do-tempo__temperatura--valor"], [1, "post-previsao-do-tempo__temperatura--sufixo"], [1, "card-text", 2, "margin-top", "20px"], ["mat-button", "", "color", "primary"], ["src", "assets/images/landscapes/google-maps.png", "alt", "user", 2, "max-width", "70px", "max-height", "30px"], ["mat-button", "", "color", "primary", 2, "margin-left", "18%"], [1, "carousel-item"], ["src", "https://images.pexels.com/photos/6469984/pexels-photo-6469984.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], ["src", "https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "align", "center", "alt", "..."], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], ["type", "button", "data-bs-target", "#carouselExampleControls", "data-bs-slide", "next", "onclick", "$('#carouselExampleControls').carousel('prev')", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"]],
   template: function ForecastCarouselComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4)(5, "div", 5);
@@ -395,7 +395,7 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "button", 22)(46, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "button", 24)(46, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, " Compartilhar ");
@@ -443,7 +443,7 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](88, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "button", 22)(91, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "button", 24)(91, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, " Compartilhar ");
@@ -491,13 +491,13 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](133, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "button", 22)(136, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "button", 24)(136, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](138, " Compartilhar ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "div", 24)(140, "div", 3)(141, "div", 4)(142, "div", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](143, "img", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "div", 25)(140, "div", 3)(141, "div", 4)(142, "div", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](143, "img", 26);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](144, "div", 7)(145, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "Carrancas - 442 km");
@@ -539,13 +539,13 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](180, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](181, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](182, "button", 22)(183, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](182, "button", 24)(183, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](184, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](185, " Compartilhar ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](186, "div", 4)(187, "div", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](188, "img", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](188, "img", 26);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](189, "div", 7)(190, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](191, "Carrancas - 442 km");
@@ -587,13 +587,13 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](225, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](226, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](227, "button", 22)(228, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](227, "button", 24)(228, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](229, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](230, " Compartilhar ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](231, "div", 4)(232, "div", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](233, "img", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](233, "img", 26);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](234, "div", 7)(235, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](236, "Carrancas - 442 km");
@@ -635,13 +635,13 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](270, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](271, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](272, "button", 22)(273, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](272, "button", 24)(273, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, " Compartilhar ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](276, "div", 24)(277, "div", 3)(278, "div", 4)(279, "div", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](280, "img", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](276, "div", 25)(277, "div", 3)(278, "div", 4)(279, "div", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](280, "img", 27);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](281, "div", 7)(282, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](283, "Paranapiacaba - 62 km");
@@ -683,13 +683,13 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](317, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](318, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](319, "button", 22)(320, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](319, "button", 24)(320, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](321, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](322, " Compartilhar ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](323, "div", 4)(324, "div", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](325, "img", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](325, "img", 27);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](326, "div", 7)(327, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](328, "Paranapiacaba - 62 km");
@@ -737,7 +737,7 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](367, " Compartilhar ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](368, "div", 4)(369, "div", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](370, "img", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](370, "img", 27);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](371, "div", 7)(372, "h3", 8);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](373, "Paranapiacaba - 62 km");
@@ -779,16 +779,16 @@ ForecastCarouselComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_M
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](407, "img", 23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](408, " Ver rota ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](409, "button", 22)(410, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](409, "button", 24)(410, "mat-icon");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](411, "share");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](412, " Compartilhar ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](413, "button", 27);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](414, "span", 28);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](413, "button", 28);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](414, "span", 29);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](415, "button", 29);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](416, "span", 30);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](415, "button", 30);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](416, "span", 31);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
     }
   },
@@ -1002,12 +1002,10 @@ function ForecastWhetherCitiesComponent_mat_card_0_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](39, "mat-grid-list", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](40, ForecastWhetherCitiesComponent_mat_card_0_div_40_Template, 1, 0, "div", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](41, "div", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](42, " mostrando1 ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](43, "app-forecast-carousel");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](42, "app-forecast-carousel");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](44, "div", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](45, " mostrando2 ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](46, "app-forecast-carousel");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](43, "div", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](44, "app-forecast-carousel");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
@@ -1179,14 +1177,14 @@ ForecastWhetherCitiesComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPOR
   consts: [["style", "margin: -20px;", 4, "ngIf"], [2, "margin", "-20px"], [2, "width", "100%"], ["align", "end"], [1, "demo-chip-list"], ["chipList", ""], ["style", "font-size: small;", 3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], ["mat-button", "", "color", "primary", 3, "matMenuTriggerFor"], ["menuFilters", "matMenuTrigger"], ["menu", "matMenu"], ["mat-menu-item", "", 3, "matMenuTriggerFor"], ["mat-menu-item", ""], ["ordenate", "matMenu"], ["appearance", "fill"], ["placeholder", "Name", 3, "ngModel", "click", "selectionChange", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], ["climate", "matMenu"], ["placeholder", "Name", 3, "click", "selectionChange"], ["fxLayout", "row wrap", "rowHeight", "13rem", 1, "header-14-sub", 3, "gridCols"], [4, "ngFor", "ngForOf"], ["fxHide", "", "fxShow.lt-md", "", 1, "content-tab-foracast-carousel"], ["fxShow.lt-md", "", 1, "content-tab-foracast-carousel"], [2, "font-size", "small", 3, "selectable", "removable", "removed"], ["matChipRemove", "", "style", " transform: scale(0.8);", 4, "ngIf"], ["matChipRemove", "", 2, "transform", "scale(0.8)"], [3, "value"]],
   template: function ForecastWhetherCitiesComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, ForecastWhetherCitiesComponent_mat_card_0_Template, 47, 13, "mat-card", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, ForecastWhetherCitiesComponent_mat_card_0_Template, 45, 13, "mat-card", 0);
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.forecastCities);
     }
   },
   dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgModel, _angular_material_core__WEBPACK_IMPORTED_MODULE_6__.MatOption, _angular_material_button__WEBPACK_IMPORTED_MODULE_7__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardContent, _angular_material_card__WEBPACK_IMPORTED_MODULE_8__.MatCardActions, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChipList, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChip, _angular_material_chips__WEBPACK_IMPORTED_MODULE_9__.MatChipRemove, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__.MatLabel, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__.MatGridList, _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__.MatIcon, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenu, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenuItem, _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__.MatMenuTrigger, _angular_material_select__WEBPACK_IMPORTED_MODULE_14__.MatSelect, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_15__.DefaultLayoutDirective, _angular_flex_layout_extended__WEBPACK_IMPORTED_MODULE_16__.DefaultShowHideDirective, _grid_directive__WEBPACK_IMPORTED_MODULE_0__.GridColsDirective, _foracast_carousel_forecast_carousel_component__WEBPACK_IMPORTED_MODULE_1__.ForecastCarouselComponent],
-  styles: [".content-tab-foracast-carousel[_ngcontent-%COMP%] {\n  min-height: 900px; \n}\n\n\n@media (max-width: 480px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 400px;\n  }\n}\n@media (min-width: 481px) and (max-width: 767px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 500px;\n  }\n}\n@media (min-width: 768px) and (max-width: 979px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 100px;\n  }\n}\n@media (min-width: 900px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 1200px;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC1jb21wb25lbnRzL2ZvcmVjYXN0LXdoZWF0aGVyLWNpdGllcy9mb3JhY2FzdC13aGVhdGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksaUJBQUEsRUFBQSx1QkFBQTtBQUNKOztBQUVFOztDQUFBO0FBSUE7RUFDQTtJQUFnQyxnQkFBQTtFQUNoQztBQUNGO0FBQ0U7RUFDQTtJQUFnQyxnQkFBQTtFQUVoQztBQUNGO0FBQUU7RUFDQTtJQUFpQyxnQkFBQTtFQUdqQztBQUNGO0FBREU7RUFDQTtJQUFnQyxpQkFBQTtFQUloQztBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRlbnQtdGFiLWZvcmFjYXN0LWNhcm91c2VsIHtcclxuICAgIG1pbi1oZWlnaHQ6IDkwMHB4OyAvKiBzZXQgZGVmYXVsdCBoZWlnaHQgKi9cclxuICB9XHJcbiAgXHJcbiAgLyogRm9yIG1lZGlhIHF1ZXJpZXMgdG8gd29yayBvbiBzbWFydHBob25lcywgYmUgc3VyZSB0byBhZGQgYSBtZXRhIHRhZyBzaW1pbGFyIHRvIHRoZSBmb2xsb3dpbmcgaW4gdGhlIGhlYWQgb2YgeW91ciBkb2N1bWVudCBcclxuICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiPlxyXG4gICovXHJcbiAgXHJcbiAgQG1lZGlhIChtYXgtd2lkdGg6IDQ4MHB4KSB7XHJcbiAgLmNvbnRlbnQtdGFiLWZvcmFjYXN0LWNhcm91c2VsIHttaW4td2lkdGg6IDQwMHB4O31cclxuICB9XHJcbiAgXHJcbiAgQG1lZGlhIChtaW4td2lkdGg6IDQ4MXB4KSBhbmQgKG1heC13aWR0aDogNzY3cHgpIHtcclxuICAuY29udGVudC10YWItZm9yYWNhc3QtY2Fyb3VzZWwge21pbi13aWR0aDogNTAwcHg7fVxyXG4gIH1cclxuICBcclxuICBAbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIGFuZCAobWF4LXdpZHRoOiA5NzlweCkge1xyXG4gIC5jb250ZW50LXRhYi1mb3JhY2FzdC1jYXJvdXNlbCB7IG1pbi13aWR0aDogMTAwcHg7fVxyXG4gIH1cclxuICBcclxuICBAbWVkaWEgKG1pbi13aWR0aDogOTAwcHgpIHtcclxuICAuY29udGVudC10YWItZm9yYWNhc3QtY2Fyb3VzZWwge21pbi13aWR0aDogMTIwMHB4O31cclxuICB9XHJcbiAgIl0sInNvdXJjZVJvb3QiOiIifQ== */"]
+  styles: [".content-tab-foracast-carousel[_ngcontent-%COMP%] {\n  min-height: 900px; \n}\n\n\n@media (max-width: 480px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 350px;\n  }\n}\n@media (min-width: 481px) and (max-width: 767px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 500px;\n  }\n}\n@media (min-width: 768px) and (max-width: 979px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 100px;\n  }\n}\n@media (min-width: 900px) {\n  .content-tab-foracast-carousel[_ngcontent-%COMP%] {\n    min-width: 1200px;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC1jb21wb25lbnRzL2ZvcmVjYXN0LXdoZWF0aGVyLWNpdGllcy9mb3JhY2FzdC13aGVhdGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksaUJBQUEsRUFBQSx1QkFBQTtBQUNKOztBQUVFOztDQUFBO0FBSUE7RUFDQTtJQUFnQyxnQkFBQTtFQUNoQztBQUNGO0FBQ0U7RUFDQTtJQUFnQyxnQkFBQTtFQUVoQztBQUNGO0FBQUU7RUFDQTtJQUFpQyxnQkFBQTtFQUdqQztBQUNGO0FBREU7RUFDQTtJQUFnQyxpQkFBQTtFQUloQztBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRlbnQtdGFiLWZvcmFjYXN0LWNhcm91c2VsIHtcclxuICAgIG1pbi1oZWlnaHQ6IDkwMHB4OyAvKiBzZXQgZGVmYXVsdCBoZWlnaHQgKi9cclxuICB9XHJcbiAgXHJcbiAgLyogRm9yIG1lZGlhIHF1ZXJpZXMgdG8gd29yayBvbiBzbWFydHBob25lcywgYmUgc3VyZSB0byBhZGQgYSBtZXRhIHRhZyBzaW1pbGFyIHRvIHRoZSBmb2xsb3dpbmcgaW4gdGhlIGhlYWQgb2YgeW91ciBkb2N1bWVudCBcclxuICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiPlxyXG4gICovXHJcbiAgXHJcbiAgQG1lZGlhIChtYXgtd2lkdGg6IDQ4MHB4KSB7XHJcbiAgLmNvbnRlbnQtdGFiLWZvcmFjYXN0LWNhcm91c2VsIHttaW4td2lkdGg6IDM1MHB4O31cclxuICB9XHJcbiAgXHJcbiAgQG1lZGlhIChtaW4td2lkdGg6IDQ4MXB4KSBhbmQgKG1heC13aWR0aDogNzY3cHgpIHtcclxuICAuY29udGVudC10YWItZm9yYWNhc3QtY2Fyb3VzZWwge21pbi13aWR0aDogNTAwcHg7fVxyXG4gIH1cclxuICBcclxuICBAbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIGFuZCAobWF4LXdpZHRoOiA5NzlweCkge1xyXG4gIC5jb250ZW50LXRhYi1mb3JhY2FzdC1jYXJvdXNlbCB7IG1pbi13aWR0aDogMTAwcHg7fVxyXG4gIH1cclxuICBcclxuICBAbWVkaWEgKG1pbi13aWR0aDogOTAwcHgpIHtcclxuICAuY29udGVudC10YWItZm9yYWNhc3QtY2Fyb3VzZWwge21pbi13aWR0aDogMTIwMHB4O31cclxuICB9XHJcbiAgXHJcblxyXG5cclxuICAiXSwic291cmNlUm9vdCI6IiJ9 */"]
 });
 
 /***/ }),
