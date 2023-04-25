@@ -8,7 +8,9 @@ import { PageEvent } from '@angular/material/paginator';
 @Component({
   selector: 'app-forecast-wheater-cities',
   templateUrl: './forecast-wheater.component.html',
+  styleUrls: ['./foracast-wheater.component.scss']
 })
+
 export class ForecastWhetherCitiesComponent implements OnInit {
   @Output() changeFilter = new EventEmitter();
   @Output() changePage = new EventEmitter();
