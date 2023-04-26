@@ -117,12 +117,20 @@
         </mat-grid-tile> -->
       </div>
 
-      <div class="content-tab-foracast-carousel"  fxHide fxShow.lt-md >
-        <app-forecast-carousel></app-forecast-carousel>
+      <div class="content-tab-foracast-carousel" *ngIf="mobile">
+        <app-forecast-carousel-mobile></app-forecast-carousel-mobile>
       </div>
-      <div class="content-tab-foracast-carousel"   fxShow.lt-md >
-        <app-forecast-carousel></app-forecast-carousel>
+      <div class="content-tab-foracast-carousel"  *ngIf="!mobile">
+        <app-forecast-carousel-desktop></app-forecast-carousel-desktop>
       </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"
+       >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button> -->
+      
 
 
     </mat-grid-list>

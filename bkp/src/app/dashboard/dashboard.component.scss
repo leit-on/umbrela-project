@@ -44,7 +44,7 @@ mat-tab-header {
 .header-14-sub { min-height: 900px;}
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 2000px)  {
 .header-14-sub {min-height: 400px;}
 }
 

@@ -42,6 +42,7 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   pageSize = 4;
   pageIndex = 0;
   pageSizeOptions = [4];
+  mobile = false;
 
   hidePageSize = false;
   showPageSizeOptions = false;
@@ -59,6 +60,10 @@ export class ForecastWhetherCitiesComponent implements OnInit {
     this.filters.push({ name: "ensolarado", type: "climate" });
     this.filters_size = this.filters_size + 1;
     this.changeFilter.emit(this.filters);
+
+    if (window.screen.width < 500) { // 768px portrait
+      this.mobile = true;
+    }
   }
 
   setFilterOrdenate(menuTrigger: MatMenuTrigger, filter: string, type: string) {

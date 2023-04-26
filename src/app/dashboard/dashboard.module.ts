@@ -13,7 +13,9 @@ import { OurVisiterComponent } from './dashboard-components/our-visiter/our-visi
 import { ProfileComponent } from './dashboard-components/profile/profile.component';
 import { ForecastWhetherComponent } from './dashboard-components/forecast-wheather/forecast-wheater.component';
 import { ForecastWhetherCitiesComponent } from './dashboard-components/forecast-wheather-cities/forecast-wheater.component';
-import { ForecastCarouselComponent } from './dashboard-components/foracast-carousel/forecast-carousel.component';
+import { ForecastCarouselDesktopComponent } from './dashboard-components/foracast-carousel-desktop/forecast-carousel-desktop.component';
+import { ForecastCarouselMobileComponent } from './dashboard-components/foracast-carousel-mobile/forecast-carousel-mobile.component';
+import { DialogContentExampleDialog } from './dashboard-components/foracast-carousel-mobile/forecast-carousel-mobile.component';
 
 import { ProgressSpinnerDialogComponent } from './dashboard-components/spinner-dialog-component/progress-spinner-dialog.component';
 
@@ -22,6 +24,7 @@ import { ContactsComponent } from './dashboard-components/contacts/contacts.comp
 import { ActivityTimelineComponent } from './dashboard-components/activity-timeline/activity-timeline.component';
 import {GridColsDirective} from './grid-directive'
 import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   imports: [
@@ -34,6 +37,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     
     RouterModule.forChild(DashboardRoutes)
   ],
-  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent,GridColsDirective, ProgressSpinnerDialogComponent, ForecastCarouselComponent, ProfileComponent,ForecastWhetherCitiesComponent,ForecastWhetherComponent, ContactsComponent, ActivityTimelineComponent]
+  declarations: [DashboardComponent, DialogContentExampleDialog, SalesOverviewComponent, OurVisiterComponent,GridColsDirective, ProgressSpinnerDialogComponent, ForecastCarouselDesktopComponent, ForecastCarouselMobileComponent, ProfileComponent,ForecastWhetherCitiesComponent,ForecastWhetherComponent, ContactsComponent, ActivityTimelineComponent]
 })
 export class DashboardModule {}

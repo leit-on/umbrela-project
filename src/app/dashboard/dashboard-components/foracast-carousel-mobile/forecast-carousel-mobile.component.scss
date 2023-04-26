@@ -32,3 +32,13 @@
     margin-bottom: 8px;
     color: #333;
 }
+
+.post-previsao-do-tempo__temperaturas {
+    font-family: opensans,opensans-bastian,Arial,sans-serif;
+    line-height: 1.25;
+    letter-spacing: .8px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
