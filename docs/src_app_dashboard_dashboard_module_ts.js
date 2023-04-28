@@ -814,8 +814,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ 4522);
 /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/icon */ 7822);
 /* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/flex-layout/flex */ 6722);
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/card */ 2156);
-
 
 
 
@@ -1306,56 +1304,125 @@ DialogContentExampleDialog.ɵfac = function DialogContentExampleDialog_Factory(t
 DialogContentExampleDialog.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
   type: DialogContentExampleDialog,
   selectors: [["dialog-content-example-dialog"]],
-  decls: 40,
+  decls: 136,
   vars: 0,
-  consts: [["mat-dialog-title", ""], [1, "mat-typography", 2, "justify-content", "center", "align-items", "center", "display", "flex"], [2, "line-break", "auto"], [1, "example-card"], [2, "justify-content", "left"], ["mat-card-sm-image", "", "src", "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", "alt", "Photo of a Shiba Inu"], ["mat-button", ""], ["align", "end"], ["mat-button", "", "mat-dialog-close", ""]],
+  consts: [["mat-dialog-title", ""], [1, "mat-typography", 2, "position", "relative", "justify-content", "center", "align-items", "center", "display", "flex"], [2, "line-break", "auto"], [1, "container", 2, "margin-top", "500px"], [1, "mx-auto", "my-5", 2, "max-width", "23rem"], [1, "card"], ["data-mdb-ripple-color", "light", 1, "bg-image", "hover-overlay", "ripple"], ["src", "https://images.pexels.com/photos/14754641/pexels-photo-14754641.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280", 1, "img-fluid"], ["href", "#!"], [1, "mask", 2, "background-color", "rgba(251, 251, 251, 0.15)"], [1, "card-body"], [1, "card-title", "font-weight-bold"], [1, "list-unstyled", "list-inline", "mb-0"], [1, "list-inline-item", "me-0"], [1, "fas", "fa-star", "text-warning", "fa-xs"], [2, "transform", "scale(0.7)"], [1, "list-inline-item"], [1, "fas", "fa-star-half-alt", "text-warning", "fa-xs"], [1, "text-muted"], [1, "mb-2"], [1, "list-unstyled", "list-inline", "d-flex", "justify-content-between"], [1, "chip", "me-0"], ["href", "#!", 1, "btn", "btn-link", "link-secondary", "p-md-1", "mb-0"], [1, "container"], ["align", "end"], ["mat-button", "", "mat-dialog-close", ""]],
   template: function DialogContentExampleDialog_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Locais nas proximidades");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-dialog-content", 1)(3, "div", 2)(4, "mat-card", 3)(5, "mat-card-header", 4)(6, "mat-card-title");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Garganta do Padre");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-card-subtitle");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Avalia\u00E7\u00E3o");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-dialog-content", 1)(3, "div", 2)(4, "div", 3)(5, "section", 4)(6, "div", 5)(7, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "img", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "div", 9);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "img", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-card-actions")(13, "button", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Compartilhar");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 10)(12, "h5", 11)(13, "a");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Monte Sabo\u00F3");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "ul", 12)(16, "li", 13)(17, "i", 14)(18, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "star");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "mat-card", 3)(16, "mat-card-header", 4)(17, "mat-card-title");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Garganta do Padre");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "mat-card-subtitle");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Avalia\u00E7\u00E3o");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "img", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "mat-card-actions")(24, "button", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Compartilhar");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "li", 13)(21, "i", 14)(22, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "star");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "mat-card", 3)(27, "mat-card-header", 4)(28, "mat-card-title");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Garganta do Padre");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li", 13)(25, "i", 14)(26, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li", 13)(29, "i", 14)(30, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "li", 16)(33, "i", 17)(34, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "star_half");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li", 16)(37, "p", 18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "4.5 (413)");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "p", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "Ponto Turistico, Montanha");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "mat-card-subtitle");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Avalia\u00E7\u00E3o");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "img", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "mat-card-actions")(35, "button", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "Compartilhar");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "ul", 20)(42, "li", 13)(43, "div", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "Abertura: 5:30PM \u00E0s 7:30PM");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "a", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "Compartilhe");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "mat-dialog-actions", 7)(38, "button", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Fechar");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "div", 23)(48, "section", 4)(49, "div", 5)(50, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "img", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "a", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](53, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 10)(55, "h5", 11)(56, "a");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "Monte Sabo\u00F3");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "ul", 12)(59, "li", 13)(60, "i", 14)(61, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "li", 13)(64, "i", 14)(65, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "li", 13)(68, "i", 14)(69, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "li", 13)(72, "i", 14)(73, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "li", 16)(76, "i", 17)(77, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "star_half");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "li", 16)(80, "p", 18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "4.5 (413)");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "p", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, "Ponto Turistico, Montanha");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "ul", 20)(85, "li", 13)(86, "div", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, "Abertura: 5:30PM \u00E0s 7:30PM");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "a", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "Compartilhe");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "div", 23)(91, "section", 4)(92, "div", 5)(93, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](94, "img", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "a", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](96, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "div", 10)(98, "h5", 11)(99, "a");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100, "Monte Sabo\u00F3");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "ul", 12)(102, "li", 13)(103, "i", 14)(104, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "li", 13)(107, "i", 14)(108, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "li", 13)(111, "i", 14)(112, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "li", 13)(115, "i", 14)(116, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, "star");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "li", 16)(119, "i", 17)(120, "mat-icon", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](121, "star_half");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "li", 16)(123, "p", 18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "4.5 (413)");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "p", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126, "Ponto Turistico, Montanha");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "ul", 20)(128, "li", 13)(129, "div", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "Abertura: 5:30PM \u00E0s 7:30PM");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "a", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132, "Compartilhe");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "mat-dialog-actions", 24)(134, "button", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](135, "Fechar");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
     }
   },
-  dependencies: [_angular_material_button__WEBPACK_IMPORTED_MODULE_2__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_5__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_5__.MatCardHeader, _angular_material_card__WEBPACK_IMPORTED_MODULE_5__.MatCardTitle, _angular_material_card__WEBPACK_IMPORTED_MODULE_5__.MatCardSubtitle, _angular_material_card__WEBPACK_IMPORTED_MODULE_5__.MatCardActions, _angular_material_card__WEBPACK_IMPORTED_MODULE_5__.MatCardSmImage, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogClose, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogTitle, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogContent, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogActions],
+  dependencies: [_angular_material_button__WEBPACK_IMPORTED_MODULE_2__.MatButton, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogClose, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogTitle, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogContent, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogActions, _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__.MatIcon],
   encapsulation: 2
 });
 
