@@ -22,7 +22,10 @@ export class ForecastCarouselMobileComponent implements OnInit {
   }
 
   openDialogTourism(){
-    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+    const dialogRef = this.dialog.open(DialogContentExampleDialog, {
+      width: '100vw',
+      maxWidth: '95vw',
+  });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
