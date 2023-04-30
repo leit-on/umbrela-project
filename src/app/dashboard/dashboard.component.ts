@@ -15,7 +15,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 	encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements AfterViewInit {
-	tabForecast: ({ title: string; title_day_week: string; forecastDay: { date: string; climate: string; tempMin: string; tempMax: string, rain: string; umity: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; } }; forecastCities: { id: string; distance: string; city: string; climate: string; rain: string; icon: string; umity: string; }[]; } | { title: string; title_day_week: string; tabForecast: string; forecastDay?: undefined; forecastCities?: undefined; })[]
+	tabForecast: ({ title: string; title_day_week: string; forecastDay: { date: string; climate: string; tempMin: string; tempMax: string, rain: string; umity: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; } }; forecastCities: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; rain: string; icon: string; umity: string; }[]; } | { title: string; title_day_week: string; tabForecast: string; forecastDay?: undefined; forecastCities?: undefined; })[]
 	//tabForecast: [{ title: string; forecastDay:{ date:string; clima: string; }; forecastCities:[{id:string; distance:string; city:string; clima:string; rain: string; umity: string}];}]
 	value = "São Paulo";
 	pageIndexPaginate = 0;
@@ -102,7 +102,18 @@ export class DashboardComponent implements AfterViewInit {
 						id: "1",
 						distance: "15",
 						city: "Atibaia",
-						climate: "ensolarado",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "wb_sunny",
 						umity: "8"
@@ -111,7 +122,18 @@ export class DashboardComponent implements AfterViewInit {
 						id: "2",
 						distance: "15",
 						city: "São Sebastião",
-						climate: "chuvoso",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "water_drop",
 						umity: "8"
@@ -120,7 +142,18 @@ export class DashboardComponent implements AfterViewInit {
 						id: "3",
 						distance: "15",
 						city: "Atibaia",
-						climate: "nublado",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "wb_cloudy",
 						umity: "8"
@@ -131,7 +164,18 @@ export class DashboardComponent implements AfterViewInit {
 
 						city: "Atibaia",
 						icon: "brightness_low",
-						climate: "sol entre nuvens",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						umity: "8"
 					}
@@ -165,7 +209,18 @@ export class DashboardComponent implements AfterViewInit {
 						id: "1",
 						distance: "15",
 						city: "Atibaia",
-						climate: "ensolarado",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "wb_sunny",
 						umity: "8"
@@ -174,7 +229,18 @@ export class DashboardComponent implements AfterViewInit {
 						id: "2",
 						distance: "15",
 						city: "São Sebastião",
-						climate: "chuvoso",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "water_drop",
 						umity: "8"
@@ -185,7 +251,18 @@ export class DashboardComponent implements AfterViewInit {
 
 						city: "Atibaia",
 
-						climate: "nublado",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "wb_cloudy",
 						umity: "8"
@@ -196,7 +273,18 @@ export class DashboardComponent implements AfterViewInit {
 
 						city: "Atibaia",
 						icon: "brightness_low",
-						climate: "sol entre nuvens",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						umity: "8"
 					}
@@ -230,7 +318,18 @@ export class DashboardComponent implements AfterViewInit {
 						id: "1",
 						distance: "15",
 						city: "Atibaia",
-						climate: "ensolarado",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "wb_sunny",
 						umity: "8"
@@ -239,7 +338,18 @@ export class DashboardComponent implements AfterViewInit {
 						id: "2",
 						distance: "15",
 						city: "São Sebastião",
-						climate: "chuvoso",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "water_drop",
 						umity: "8"
@@ -250,7 +360,18 @@ export class DashboardComponent implements AfterViewInit {
 
 						city: "Atibaia",
 
-						climate: "nublado",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						icon: "wb_cloudy",
 						umity: "8"
@@ -261,7 +382,18 @@ export class DashboardComponent implements AfterViewInit {
 
 						city: "Atibaia",
 						icon: "brightness_low",
-						climate: "sol entre nuvens",
+						morning: {
+							temperature: "18",
+							climate: "ensolarado"
+						},
+						afternoon: {
+							temperature: "25",
+							climate: "nublado"
+						},
+						night: {
+							temperature: "20",
+							climate: "ceu limpo"
+						},
 						rain: "15",
 						umity: "8"
 					}
@@ -286,201 +418,7 @@ export class DashboardComponent implements AfterViewInit {
 			this.callAPIForecast();
 		}
 		if (event.pageIndex == 1) {
-			this.tabForecast = [
-				{
-					title: "14/04/2023",
-					title_day_week: 'sexta',
-					forecastDay: {
-						date: "14/04/2023",
-						climate: "ensolarado",
-						tempMin: "17",
-						tempMax: "28",
-						rain: "5",
-						umity: "5",
-						morning: {
-							temperature: "18",
-							climate: "ensolarado"
-						},
-						afternoon: {
-							temperature: "25",
-							climate: "nublado"
-						},
-						night: {
-							temperature: "20",
-							climate: "ceu limpo"
-						}
-					},
-					forecastCities: [
-						{
-							id: "1",
-							distance: "15",
-							city: "Laranjais",
-							climate: "ensolarado",
-							rain: "15",
-							icon: "wb_sunny",
-							umity: "8"
-						},
-						{
-							id: "2",
-							distance: "15",
-							city: "São Sebastião",
-							climate: "chuvoso",
-							rain: "15",
-							icon: "water_drop",
-							umity: "8"
-						},
-						{
-							id: "3",
-							distance: "15",
-							city: "Atibaia",
-							climate: "nublado",
-							rain: "15",
-							icon: "wb_cloudy",
-							umity: "8"
-						},
-						{
-							id: "4",
-							distance: "15",
-
-							city: "Atibaia",
-							icon: "brightness_low",
-							climate: "sol entre nuvens",
-							rain: "15",
-							umity: "8"
-						}
-					]
-				},
-				{
-					title: "15/04/2023",
-					title_day_week: 'sabado',
-					forecastDay: {
-						date: "14/04/2023",
-						climate: "ensolarado",
-						tempMin: "17",
-						tempMax: "28",
-						rain: "5",
-						umity: "5",
-						morning: {
-							temperature: "18",
-							climate: "ensolarado"
-						},
-						afternoon: {
-							temperature: "25",
-							climate: "nublado"
-						},
-						night: {
-							temperature: "20",
-							climate: "ceu limpo"
-						}
-					},
-					forecastCities: [
-						{
-							id: "1",
-							distance: "15",
-							city: "Atibaia",
-							climate: "ensolarado",
-							rain: "15",
-							icon: "wb_sunny",
-							umity: "8"
-						},
-						{
-							id: "2",
-							distance: "15",
-							city: "São Sebastião",
-							climate: "chuvoso",
-							rain: "15",
-							icon: "water_drop",
-							umity: "8"
-						},
-						{
-							id: "3",
-							distance: "15",
-
-							city: "Atibaia",
-
-							climate: "nublado",
-							rain: "15",
-							icon: "wb_cloudy",
-							umity: "8"
-						},
-						{
-							id: "4",
-							distance: "15",
-
-							city: "Atibaia",
-							icon: "brightness_low",
-							climate: "sol entre nuvens",
-							rain: "15",
-							umity: "8"
-						}
-					]
-				},
-				{
-					title: "16/04/2023",
-					title_day_week: 'domingo',
-					forecastDay: {
-						date: "14/04/2023",
-						climate: "ensolarado",
-						tempMin: "17",
-						tempMax: "28",
-						rain: "5",
-						umity: "5",
-						morning: {
-							temperature: "18",
-							climate: "ensolarado"
-						},
-						afternoon: {
-							temperature: "25",
-							climate: "nublado"
-						},
-						night: {
-							temperature: "20",
-							climate: "ceu limpo"
-						}
-					},
-					forecastCities: [
-						{
-							id: "1",
-							distance: "15",
-							city: "Atibaia",
-							climate: "ensolarado",
-							rain: "15",
-							icon: "wb_sunny",
-							umity: "8"
-						},
-						{
-							id: "2",
-							distance: "15",
-							city: "São Sebastião",
-							climate: "chuvoso",
-							rain: "15",
-							icon: "water_drop",
-							umity: "8"
-						},
-						{
-							id: "3",
-							distance: "15",
-
-							city: "Atibaia",
-
-							climate: "nublado",
-							rain: "15",
-							icon: "wb_cloudy",
-							umity: "8"
-						},
-						{
-							id: "4",
-							distance: "15",
-
-							city: "Atibaia",
-							icon: "brightness_low",
-							climate: "sol entre nuvens",
-							rain: "15",
-							umity: "8"
-						}
-					]
-				}
-			]
+			//Adicionar codigo aqui
 		}
 
 	}

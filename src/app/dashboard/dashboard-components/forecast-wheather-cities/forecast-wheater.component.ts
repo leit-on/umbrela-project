@@ -15,7 +15,7 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   @Output() changeFilter = new EventEmitter();
   @Output() changePage = new EventEmitter();
   @Output() getDetailCity = new EventEmitter();
-  
+
   @ViewChild('menuFilters') menuFilters: any;
 
   ordenate_filters = ['mais relevantes', 'mais próximos', 'mais sol', 'mais quentes'];
@@ -32,11 +32,11 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   removable = true;
 
   constructor() { }
-  @Input() forecastCities!: { id: string; distance: string; city: string; climate: string; rain: string; umity: string; icon: string; }[] | undefined;
+  @Input() forecastCities!: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; rain: string; umity: string; icon: string; }[] | undefined;
   @Input() lengthPaginate: any;
   @Input() pageIndexPaginate: any;
 
-  
+
 
   length = 8;
   pageSize = 4;
@@ -81,10 +81,10 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   removeFilter(fruit: any): void {
     console.log('tipo do filtro', fruit);
 
-    if(fruit.type == 'ordenate')
+    if (fruit.type == 'ordenate')
       this.ordenate_filter_initial = '';
 
-    if(fruit.type == 'climate')
+    if (fruit.type == 'climate')
       this.climate_filter_initial = '';
 
     const index = this.filters.indexOf(fruit);
@@ -145,7 +145,7 @@ export class ForecastWhetherCitiesComponent implements OnInit {
     }
   }
 
-  navigateDetailCity(city:any){
+  navigateDetailCity(city: any) {
     this.getDetailCity.emit(city);
   }
 }
