@@ -12,7 +12,7 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./forecast-carousel-mobile.component.scss']
 })
 export class ForecastCarouselMobileComponent implements OnInit {
-  @Input() forecastCities!: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; rain: string; umity: string; icon: string; }[] | [];
+  @Input() forecastCities!: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; umity: string; icon: string; }[] | [];
 
 
   constructor(public dialog: MatDialog) { }

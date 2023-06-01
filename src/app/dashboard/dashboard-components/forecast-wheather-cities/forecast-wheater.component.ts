@@ -31,8 +31,8 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   selectable = true;
   removable = true;
 
+  @Input() forecastCities!: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; umity: string; icon: string; }[] | undefined;
   constructor() { }
-  @Input() forecastCities!: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; rain: string; umity: string; icon: string; }[] | undefined;
   @Input() lengthPaginate: any;
   @Input() pageIndexPaginate: any;
 
