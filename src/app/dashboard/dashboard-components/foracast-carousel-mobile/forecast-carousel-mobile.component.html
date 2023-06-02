@@ -13,13 +13,13 @@
               <div class="post-previsao-do-tempo__previsao">
                 <div class="post-previsao-do-tempo__previsao-do-dia">
                   <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--1">
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'ensolarado'">
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'sunshine'">
                       <img src="assets/images/landscapes/sun.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'nublado'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Overcast' || item.morning.climate == 'Partially cloudy'">
                       <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'chuvoso'">
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Rain'">
                       <img src="assets/images/landscapes/rain.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
                   </div>
@@ -27,13 +27,13 @@
                 </div>
                 <div class="post-previsao-do-tempo__previsao-do-dia">
                   <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2">
-                    <div class="pro-img" *ngIf="item.morning.climate == 'ensolarado'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'sunshine'">
                       <img src="assets/images/landscapes/sun.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.morning.climate == 'nublado'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Overcast' || item.morning.climate == 'Partially cloudy'">
                       <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.morning.climate == 'chuvoso'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Rain'">
                       <img src="assets/images/landscapes/rain.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
                   </div>
@@ -41,13 +41,13 @@
                 </div>
                 <div class="post-previsao-do-tempo__previsao-do-dia">
                   <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2n">
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'ceu limpo'">
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'clear'">
                       <img src="assets/images/landscapes/moon.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'nublado'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Overcast' || item.morning.climate == 'Partially cloudy'">
                       <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'chuvoso'">
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Rain'">
                       <img src="assets/images/landscapes/rain.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
                   </div>
@@ -55,10 +55,10 @@
                 </div>
                 <div class="post-previsao-do-tempo__temperaturas">
                   <div class="post-previsao-do-tempo__temperatura"><span
-                      class="post-previsao-do-tempo__temperatura--valor">31º</span><span
+                      class="post-previsao-do-tempo__temperatura--valor">{{item.tempMax}}º</span><span
                       class="post-previsao-do-tempo__temperatura--sufixo">max</span></div>
                   <div class="post-previsao-do-tempo__temperatura"><span
-                      class="post-previsao-do-tempo__temperatura--valor">18º</span><span
+                      class="post-previsao-do-tempo__temperatura--valor">{{item.tempMin}}º</span><span
                       class="post-previsao-do-tempo__temperatura--sufixo">min</span></div>
                 </div>
               </div>

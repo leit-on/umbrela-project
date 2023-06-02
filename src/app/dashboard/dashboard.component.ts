@@ -17,10 +17,13 @@ import { HttpClient } from '@angular/common/http';
 	encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements AfterViewInit {
-	tabForecast: ({ title: string; title_day_week: string; forecastDay: { date: string; climate: string; tempMin: string; tempMax: string, rain: string; umity: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; } }; forecastCities: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[]; } | { title: string; title_day_week: string; tabForecast: string; forecastDay?: undefined; forecastCities?: undefined; })[]
+	tabForecast: ({ title: string; title_day_week: string; forecastDay: { date: string; climate: string; tempMin: string; tempMax: string; rain: string; umity: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; } }; forecastCities: { id: string; distance: string; city: string;  tempMin: string; tempMax: string;  morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[]; } | { title: string; title_day_week: string; forecastDay?: undefined; forecastCities?: undefined; })[]
 	//tabForecast: [{ title: string; forecastDay:{ date:string; clima: string; }; forecastCities:[{id:string; distance:string; city:string; clima:string; rain: string; umity: string}];}]
 	value = "São Paulo";
 	pageIndexPaginate = 0;
+	latitude:any;
+	longitude:any;
+
 	private httpClient2: HttpClient;
 
 	private service: ServiceComponent;
@@ -41,8 +44,32 @@ export class DashboardComponent implements AfterViewInit {
 	ngAfterViewInit() { }
 
 
-	ngOnInit() {
-		this.callAPIForecast();
+	async ngOnInit() {
+		// if (navigator.geolocation) {
+		// 	const position = navigator.geolocation.getCurrentPosition(this.successFunction);
+
+		// } else {
+		// 	alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
+		// }
+		const position:any = await this.getCoordinates(); 
+		let latitude = position.coords.latitude;
+		let longitude = position.coords.longitude;
+
+		this.callAPIForecast(latitude, longitude);
+	}
+	getCoordinates() {
+		return new Promise(function(resolve, reject) {
+		  navigator.geolocation.getCurrentPosition(resolve, reject);
+		});
+	  }
+
+	successFunction(position: { coords: { latitude: any; longitude: any; }; }) {
+		const lat = position.coords.latitude;
+		const long = position.coords.longitude;
+		//this.latitude = lat;
+		//longitude = long;
+		return position;
+		console.log('Your latitude is :'+lat+' and longitude is '+long);
 	}
 
 	myObservable(observer: any) {
@@ -76,13 +103,13 @@ export class DashboardComponent implements AfterViewInit {
 	}
 
 
-	callAPIForecast() {
+	callAPIForecast(lat: number | undefined, long: number | undefined): void {
 
 		let items: Object = [];
 		let itemsPrevisao: any = [];
-		let cities: { id: string; distance: string; city: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[] =  [];
+		let cities: { id: string; distance: string; city: string; tempMin: string; tempMax: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[] =  [];
 
-		 this.service.listarCidadesProximas()
+		 this.service.listarCidadesProximas(lat, long)
 			.subscribe(
 				{
 					next: (data:any) => {
@@ -168,12 +195,17 @@ export class DashboardComponent implements AfterViewInit {
 			}
 	
 			console.log('revisionado', daysCity0, daysCity);
-
+			this.tabForecast = [];
 			for (let index = 0; index < daysCity.length; index++) {
 				const element = daysCity[index];
-	
+				let data = "";
+				cities = [];
 				for (let i = 0; i < element.length; i++) {
 					const result = element[i];
+					data = result.data;
+					//let icon = 
+					let maxTemp = this.getMaxTemp(result.previsao.hours).toString();
+					let minTemp = this.getMinTemp(result.previsao.hours).toString();
 					let city = {
 						id: "1",
 						distance: this.getDistanceFromLatLonInKm(-23.5507572, -46.9388116, result.latitude, result.longitude).toString(),//"15",
@@ -190,6 +222,8 @@ export class DashboardComponent implements AfterViewInit {
 							temperature: result.previsao.hours[20].temp,//"20",
 							climate: result.previsao.hours[20].conditions,// "ceu limpo"
 						},
+						tempMax:maxTemp,
+						tempMin:minTemp,
 						url_image: 'https://images.pexels.com/photos/16317494/pexels-photo-16317494.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280',
 						rain: "15",
 						icon: "wb_sunny",
@@ -201,7 +235,7 @@ export class DashboardComponent implements AfterViewInit {
 				
 	
 				let elementItem = {
-					title: "Itapevi",
+					title: data,
 					title_day_week: 'pendente',
 					forecastDay: {
 						date: "14/04/2023",
@@ -225,7 +259,7 @@ export class DashboardComponent implements AfterViewInit {
 					},
 					forecastCities:cities
 				}
-				this.tabForecast = [];
+				
 				this.tabForecast.push(elementItem);
 				console.log('tabForecast ficou', this.tabForecast)
 	
@@ -656,7 +690,7 @@ export class DashboardComponent implements AfterViewInit {
 
 		this.pageIndexPaginate = event.pageIndex;
 		if (event.pageIndex == 0) {
-			this.callAPIForecast();
+			//this.callAPIForecast();
 		}
 		if (event.pageIndex == 1) {
 			//Adicionar codigo aqui
@@ -680,9 +714,30 @@ export class DashboardComponent implements AfterViewInit {
 		  ; 
 		var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
 		var d = R * c; // Distance in km
-		return d;
+		return d.toFixed(1);
 	  }
 	  deg2rad(deg: number) {
 		return deg * (Math.PI/180)
 	  }
+
+	getMaxTemp(tempHoras:[]){
+		let max = 0;
+		for (let index = 0; index < tempHoras.length; index++) {
+			let elent:any = tempHoras[index];
+			if(elent.temp>max){
+				max=elent.temp
+			}
+		}
+		return max;
+	}
+	getMinTemp(tempHoras:[]){
+		let min = 1000;
+		for (let index = 0; index < tempHoras.length; index++) {
+			let elent:any = tempHoras[index];
+			if(elent.temp<min){
+				min=elent.temp
+			}
+		}
+		return min;
+	}
 }
