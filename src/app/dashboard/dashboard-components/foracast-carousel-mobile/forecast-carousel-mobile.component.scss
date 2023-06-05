@@ -1,3 +1,21 @@
+.moduleItemIntrotext {
+    overflow: hidden;
+    position: relative;
+}
+.moduleItemIntrotext img {
+    position: relative;
+    margin: -50% auto;/* virtualy height needed turn don to zero */
+    width: 100%;
+    height:auto;
+    vertical-align:middle;
+}
+.moduleItemImage {
+    display:block;
+    height:200px;
+    line-height:200px;
+    overflow:hidden;
+}
+
 .post-previsao-do-tempo__previsao {
     display: flex;
     justify-content: space-between;

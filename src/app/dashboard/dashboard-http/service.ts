@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 export class ServiceComponent {
 
@@ -30,6 +30,20 @@ export class ServiceComponent {
                 //     }
                 //  );
                 //  return this.result;
+    }
+
+    public buscaPontosTuristicosProximos(lat: number | undefined, long: number | undefined){
+        return this.http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+'%2C'+long+'&radius=3000&type=tourist_attraction&key=AIzaSyAne-rZLXFZVkgizh98YEjPfmr6JqE4_AM')
+    }
+
+    public buscaCidadeGoogle(cidade: string){
+        
+        return this.http.get('https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=formatted_address%2Cphotos%2Cname%2Crating%2Copening_hours%2Cgeometry&input='+cidade+'&inputtype=textquery&key=AIzaSyAne-rZLXFZVkgizh98YEjPfmr6JqE4_AM')
+    }
+    public buscaFotoCidadeGoogle(referencia: string){
+        return this.http.get('https://maps.googleapis.com/maps/api/place/photo?maxwidth=280&photo_reference='+referencia+'&key=AIzaSyAne-rZLXFZVkgizh98YEjPfmr6JqE4_AM', {
+            responseType: 'text'
+          })
     }
 
     public setResult(resultado: any){

@@ -3,23 +3,28 @@
       <div class="carousel-item"  *ngFor="let item of forecastCities;let index = index; let isFirst = first" [ngClass]="{active:isFirst}">
         <div class="cards-wrapper">
           <div class="card">
-            <div class="image-wrapper" align="center">
-              <img
+            <div class="moduleItemIntrotext" align="center">
+              <a  class="moduleItemImage">
+                <img
                 src={{item.url_image}}
                 align="center" alt="...">
+              </a>
             </div>
             <div class="card-body">
               <h3 class="card-title">{{item.city}} - {{item.distance}} km</h3>
               <div class="post-previsao-do-tempo__previsao">
                 <div class="post-previsao-do-tempo__previsao-do-dia">
                   <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--1">
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'sunshine'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Clear'">
                       <img src="assets/images/landscapes/sun.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.morning.climate == 'Overcast' || item.morning.climate == 'Partially cloudy'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Overcast'">
                       <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Rain'">
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Partially cloudy'">
+                      <img src="assets/images/landscapes/sun_cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                    </div>
+                    <div class="pro-img" *ngIf="item.morning.climate == 'Rain'">
                       <img src="assets/images/landscapes/rain.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
                   </div>
@@ -27,13 +32,16 @@
                 </div>
                 <div class="post-previsao-do-tempo__previsao-do-dia">
                   <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2">
-                    <div class="pro-img" *ngIf="item.morning.climate == 'sunshine'">
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Clear'">
                       <img src="assets/images/landscapes/sun.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.morning.climate == 'Overcast' || item.morning.climate == 'Partially cloudy'">
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Overcast'">
                       <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.morning.climate == 'Rain'">
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Partially cloudy'">
+                      <img src="assets/images/landscapes/sun_cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                    </div>
+                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Rain'">
                       <img src="assets/images/landscapes/rain.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
                   </div>
@@ -41,13 +49,16 @@
                 </div>
                 <div class="post-previsao-do-tempo__previsao-do-dia">
                   <div class="post-previsao-do-tempo__icon post-previsao-do-tempo__icon--2n">
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'clear'">
+                    <div class="pro-img" *ngIf="item.night.climate == 'Clear'">
                       <img src="assets/images/landscapes/moon.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.morning.climate == 'Overcast' || item.morning.climate == 'Partially cloudy'">
+                    <div class="pro-img" *ngIf="item.night.climate == 'Overcast'">
                       <img src="assets/images/landscapes/cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
-                    <div class="pro-img" *ngIf="item.afternoon.climate == 'Rain'">
+                    <div class="pro-img" *ngIf="item.night.climate == 'Partially cloudy'">
+                      <img src="assets/images/landscapes/sun_cloud.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
+                    </div>
+                    <div class="pro-img" *ngIf="item.night.climate == 'Rain'">
                       <img src="assets/images/landscapes/rain.jpg" style="max-width: 70px; max-height: 30px;" alt="user">
                     </div>
                   </div>
@@ -64,7 +75,7 @@
               </div>
   
               <p class="card-text" style="margin-top: 20px;">
-                <button mat-button color="primary" style="margin-left: -20px" (click)="openDialogTourism()">
+                <button mat-button color="primary" style="margin-left: -20px" (click)="openDialogTourism(item.latitudeCity, item.longitudeCity)">
                   <mat-icon>open_in_new</mat-icon>
                   Pontos Turísticos
                 </button>

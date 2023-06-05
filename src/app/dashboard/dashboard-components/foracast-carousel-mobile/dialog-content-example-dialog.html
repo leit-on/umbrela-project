@@ -3,74 +3,74 @@
 <mat-dialog-content class="mat-typography" style="position: relative; justify-content: center; align-items: center; display: flex;">
    <div style="line-break: auto; height:500px">
 
-    <div class="container">
-      <section class="mx-auto my-5" style="max-width: 23rem;">
+    <div *ngFor="let item of dataContent.results;">
+      <div class="container">
+        <section class="mx-auto my-5" style="max-width: 23rem;">
+            
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" *ngIf="item.reference != ''"> 
+              <!-- <img src="https://images.pexels.com/photos/14754641/pexels-photo-14754641.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280" class="img-fluid" /> -->
+    
+              <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=280&photo_reference={{item.reference}}&key=AIzaSyAne-rZLXFZVkgizh98YEjPfmr6JqE4_AM" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold"><a>{{item.name}}</a></h5>
+              <ul class="list-unstyled list-inline mb-0">
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs">
+                    <mat-icon style="transform: scale(0.7)">star</mat-icon>
+                  </i>
+                </li>
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs">
+                    <mat-icon style="transform: scale(0.7)">star</mat-icon>
+                  </i>
+                </li>
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs">
+                    <mat-icon style="transform: scale(0.7)">star</mat-icon>
+                  </i>
+                </li>
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs">
+                    <mat-icon style="transform: scale(0.7)">star</mat-icon>
+                  </i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star-half-alt text-warning fa-xs">
+                    <mat-icon style="transform: scale(0.7)">star_half</mat-icon>
+                  </i>
+                </li>
+                <li class="list-inline-item">
+                  <p class="text-muted">4.5 (413)</p>
+                </li>
+              </ul>
+              <p class="mb-2">{{item.vicinity}}</p>
+              <li class="list-inline-item">
+                <button mat-button color="primary">
+                  <img src="assets/images/landscapes/google-maps.png" style="max-width: 70px; max-height: 30px;" alt="user"> Maps
+                </button>
+              </li>
+              <li class="list-inline-item">
+                <button mat-button color="primary">
+                  <mat-icon>share</mat-icon>Enviar
+                </button>
+              </li>
+  
+            </div>
+          </div>
           
-        <div class="card">
-          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <img src="https://images.pexels.com/photos/14754641/pexels-photo-14754641.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280" class="img-fluid" />
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-            </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title font-weight-bold"><a>Monte Saboó</a></h5>
-            <ul class="list-unstyled list-inline mb-0">
-              <li class="list-inline-item me-0">
-                <i class="fas fa-star text-warning fa-xs">
-                  <mat-icon style="transform: scale(0.7)">star</mat-icon>
-                </i>
-              </li>
-              <li class="list-inline-item me-0">
-                <i class="fas fa-star text-warning fa-xs">
-                  <mat-icon style="transform: scale(0.7)">star</mat-icon>
-                </i>
-              </li>
-              <li class="list-inline-item me-0">
-                <i class="fas fa-star text-warning fa-xs">
-                  <mat-icon style="transform: scale(0.7)">star</mat-icon>
-                </i>
-              </li>
-              <li class="list-inline-item me-0">
-                <i class="fas fa-star text-warning fa-xs">
-                  <mat-icon style="transform: scale(0.7)">star</mat-icon>
-                </i>
-              </li>
-              <li class="list-inline-item">
-                <i class="fas fa-star-half-alt text-warning fa-xs">
-                  <mat-icon style="transform: scale(0.7)">star_half</mat-icon>
-                </i>
-              </li>
-              <li class="list-inline-item">
-                <p class="text-muted">4.5 (413)</p>
-              </li>
-            </ul>
-            <p class="mb-2">Ponto Turistico, Montanha</p>
-            <ul class="list-unstyled list-inline d-flex justify-content-between">
-              <li class="list-inline-item me-0">
-                <div class="chip me-0">Aberto entre 5:30 e 17:30</div>
-              </li>
-            </ul>
-            <li class="list-inline-item">
-              <button mat-button color="primary">
-                <img src="assets/images/landscapes/google-maps.png" style="max-width: 70px; max-height: 30px;" alt="user"> Maps
-              </button>
-            </li>
-            <li class="list-inline-item">
-              <button mat-button color="primary">
-                <mat-icon>share</mat-icon>Enviar
-              </button>
-            </li>
-
-          </div>
-        </div>
-        
-      </section>
+        </section>
+      </div>
     </div>
 
 
+
     
-    <div class="container">
+    <!-- <div class="container">
       <section class="mx-auto my-5" style="max-width: 23rem;">
           
         <div class="card">
@@ -133,7 +133,7 @@
         </div>
         
       </section>
-    </div>
+    </div> -->
    </div>
   
 </mat-dialog-content>

@@ -2,7 +2,7 @@ import { Component, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
 import { GridColsDirective } from './grid-directive'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { ProgressSpinnerDialogComponent } from './dashboard-components/spinner-dialog-component/progress-spinner-dialog.component';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ServiceComponent } from './dashboard-http/service';
@@ -17,7 +17,7 @@ import { HttpClient } from '@angular/common/http';
 	encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements AfterViewInit {
-	tabForecast: ({ title: string; title_day_week: string; forecastDay: { date: string; climate: string; tempMin: string; tempMax: string; rain: string; umity: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; } }; forecastCities: { id: string; distance: string; city: string;  tempMin: string; tempMax: string;  morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[]; } | { title: string; title_day_week: string; forecastDay?: undefined; forecastCities?: undefined; })[]
+	tabForecast: ({ title: string; title_day_week: string; forecastDay: { date: string; climate: string; tempMin: string; tempMax: string; rain: string; umity: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; } }; forecastCities: { id: string; distance: string; city: string; latitudeCity:number; longitudeCity:number; tempMin: string; tempMax: string;  morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[]; } | { title: string; title_day_week: string; forecastDay?: undefined; forecastCities?: undefined; })[]
 	//tabForecast: [{ title: string; forecastDay:{ date:string; clima: string; }; forecastCities:[{id:string; distance:string; city:string; clima:string; rain: string; umity: string}];}]
 	value = "São Paulo";
 	pageIndexPaginate = 0;
@@ -77,7 +77,7 @@ export class DashboardComponent implements AfterViewInit {
 
 			observer.next("done waiting for 5 sec");
 			observer.complete();
-		}, 1000);
+		}, 4000);
 	}
 
 	showProgressSpinnerUntilExecuted(observable: Observable<Object>) {
@@ -103,11 +103,11 @@ export class DashboardComponent implements AfterViewInit {
 	}
 
 
-	callAPIForecast(lat: number | undefined, long: number | undefined): void {
+	callAPIForecast(lat: number, long: number): void {
 
 		let items: Object = [];
 		let itemsPrevisao: any = [];
-		let cities: { id: string; distance: string; city: string; tempMin: string; tempMax: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[] =  [];
+		let cities: { id: string; distance: string; latitudeCity: number; longitudeCity: number; city: string; tempMin: string; tempMax: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; icon: string; umity: string; }[] =  [];
 
 		 this.service.listarCidadesProximas(lat, long)
 			.subscribe(
@@ -120,6 +120,9 @@ export class DashboardComponent implements AfterViewInit {
 						for (let index = 0; index < (<any>items).length; index++) {
 							const element = (<any>items)[index];
 							console.log('elemento:', element.title.split(',')[0]);
+							
+                            
+							
 							this.service.previsaoTempoCity(element.title.split(',')[0]).subscribe(
 								{
 									next: (dataPrevisao:any) => {
@@ -172,7 +175,7 @@ export class DashboardComponent implements AfterViewInit {
 			);
 			let daysCity: any = [];
 			let daysCity0: any = [];
-		setTimeout(() => {
+		setTimeout(async () => {
 			console.log('chegou até aqui');
 
 			
@@ -199,17 +202,23 @@ export class DashboardComponent implements AfterViewInit {
 			for (let index = 0; index < daysCity.length; index++) {
 				const element = daysCity[index];
 				let data = "";
+				let d = new Date();
 				cities = [];
 				for (let i = 0; i < element.length; i++) {
 					const result = element[i];
 					data = result.data;
-					//let icon = 
+					d = new Date(data);
+
+					let reference_image = await this.getImageCity(result.city_name);
+					console.log('passou do await');
 					let maxTemp = this.getMaxTemp(result.previsao.hours).toString();
 					let minTemp = this.getMinTemp(result.previsao.hours).toString();
 					let city = {
 						id: "1",
-						distance: this.getDistanceFromLatLonInKm(-23.5507572, -46.9388116, result.latitude, result.longitude).toString(),//"15",
+						distance: this.getDistanceFromLatLonInKm(lat, long, result.latitude, result.longitude).toString(),//"15",
 						city: result.city_name, //(<any>itemsPrevisao).address, //"Atibaia",
+						latitudeCity: result.latitude,
+						longitudeCity: result.longitude,
 						morning: {
 							temperature: result.previsao.hours[9].temp,//"18",
 							climate: result.previsao.hours[9].conditions,//"ensolarado"
@@ -224,19 +233,18 @@ export class DashboardComponent implements AfterViewInit {
 						},
 						tempMax:maxTemp,
 						tempMin:minTemp,
-						url_image: 'https://images.pexels.com/photos/16317494/pexels-photo-16317494.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280',
+						url_image: 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=280&photo_reference='+reference_image.candidates[0].photos[0].photo_reference+'&key=AIzaSyAne-rZLXFZVkgizh98YEjPfmr6JqE4_AM', //await this.getImageCity(result.city_name),//'https://images.pexels.com/photos/16317494/pexels-photo-16317494.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280',
 						rain: "15",
 						icon: "wb_sunny",
 						umity: "8"
 					}
 					cities.push(city);
 				}
-				console.log('cities ficou', cities)
-				
-	
+
+				var days = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 				let elementItem = {
 					title: data,
-					title_day_week: 'pendente',
+					title_day_week: days[d.getDay()],
 					forecastDay: {
 						date: "14/04/2023",
 						climate: "ensolarado",
@@ -740,4 +748,41 @@ export class DashboardComponent implements AfterViewInit {
 		}
 		return min;
 	}
+
+	getImageCity(cidade:string):Promise<any>{
+		//let url_foto_city:any;
+		return this.service.buscaCidadeGoogle(cidade).toPromise()
+			// .subscribe(
+			// 	{
+			// 		next: (data:any) => {
+			// 			console.log('dados da cidade:', data)
+			// 			console.log('referencia foto:', data.candidates[0].photos[0].photo_reference);
+            //             let reference = "";
+			// 			url_foto_city = data.candidates[0].photos[0].photo_reference;
+			// 			// if(data.candidates[0].photos[0].photo_reference != undefined){
+			// 			// 	this.service.buscaFotoCidadeGoogle(data.candidates[0].photos[0].photo_reference)
+			// 			// 	// .pipe(
+			// 			// 	// 	map((response: String) => {
+			// 			// 	// 	  console.log(response);
+			// 			// 	// 	  url_foto_city = response;
+			// 			// 	// 	})
+			// 			// 	// )
+							
+			// 			// 	.subscribe(
+			// 			// 		url => {
+			// 			// 			console.log('url retornada:', url);
+			// 			// 			url_foto_city = url;
+			// 			// 		}
+
+			// 			// 	)
+			// 			// }
+			// 		},
+			// 	    error: error => {
+			// 		 console.error('There was an error!', error);
+			// 	    }
+			//     }
+			// )
+			// return url_foto_city;
+    }
+
 }

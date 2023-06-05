@@ -27,7 +27,7 @@
       <mat-menu #menu="matMenu">
         <button mat-menu-item [matMenuTriggerFor]="ordenate">Ordenar</button>
         <button mat-menu-item [matMenuTriggerFor]="climate">Clima</button>
-
+        <button mat-menu-item [matMenuTriggerFor]="distance">Distância</button>
         <button mat-menu-item>Turismo</button>
 
       </mat-menu>
@@ -63,6 +63,18 @@
         </mat-form-field>
       </mat-menu>
 
+      <mat-menu #distance="matMenu">
+        <mat-form-field appearance="fill">
+          <mat-label>selecione...</mat-label>
+          <mat-select placeholder="Name" (click)="$event.stopPropagation();$event.preventDefault"
+            (selectionChange)="setFilterDistance(menuFilters, $event.value, 'distance')"  [(ngModel)]="climate_filter_initial">
+            <mat-option *ngFor="let name of distances" [value]="name">
+              {{ name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-menu>
+      
       <mat-menu #climate="matMenu">
         <mat-form-field appearance="fill">
           <mat-label>selecione...</mat-label>

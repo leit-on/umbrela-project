@@ -20,7 +20,7 @@ export class ForecastWhetherCitiesComponent implements OnInit {
 
   ordenate_filters = ['mais relevantes', 'mais próximos', 'mais sol', 'mais quentes'];
   climates = ['ensolarado', 'sol-entre-nuvens', 'nublado', 'chuvoso'];
-
+  distances = ['menos de 30km', 'menos de 60km', 'menos de 90km', 'menos de 200km'];
   filters: ({ name: string; type: string })[] = [];
   filters_size = 0;
   ordenate_filter_initial = '';
@@ -31,7 +31,7 @@ export class ForecastWhetherCitiesComponent implements OnInit {
   selectable = true;
   removable = true;
 
-  @Input() forecastCities!: { id: string; distance: string; city: string; tempMin: string; tempMax: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; umity: string; icon: string; }[] | undefined;
+  @Input() forecastCities!: { id: string; distance: string; latitudeCity:number; longitudeCity: number; city: string; tempMin: string; tempMax: string; morning: { temperature: string; climate: string; }; afternoon: { temperature: string; climate: string; }; night: { temperature: string; climate: string; }; url_image: string; rain: string; umity: string; icon: string; }[] | undefined;
   constructor() { }
   @Input() lengthPaginate: any;
   @Input() pageIndexPaginate: any;
@@ -59,6 +59,9 @@ export class ForecastWhetherCitiesComponent implements OnInit {
     this.changeFilter.emit(this.filters);
     this.filters.push({ name: "ensolarado", type: "climate" });
     this.filters_size = this.filters_size + 1;
+    this.filters.push({ name: "menos de 30km", type: "distance" });
+    this.filters_size = this.filters_size + 1;
+
     this.changeFilter.emit(this.filters);
 
     if (window.screen.width < 500) { // 768px portrait
@@ -77,6 +80,12 @@ export class ForecastWhetherCitiesComponent implements OnInit {
     this.addFilter(filter, type);
     menuTrigger.closeMenu();
   }
+  setFilterDistance(menuTrigger: MatMenuTrigger, filter: string, type: string) {
+    console.log('filter:', filter);
+    this.addFilter(filter, type);
+    menuTrigger.closeMenu();
+  }
+
 
   removeFilter(fruit: any): void {
     console.log('tipo do filtro', fruit);
